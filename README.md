@@ -6,27 +6,25 @@
 - [ ] Setup HTTPS + DuckDNS
 - [ ] Setup the use packages
 - [ ] Setup MQTT
-- [x] Setup Basic Configuration
 
 ## Current Configuration
 * Raspberry Pi 3 Model B+ using [Hass.io](https://home-assistant.io/hassio/)
 
 ### Devices
 
-- [Sonos Playbar](https://www.amazon.com/Sonos-PLAYBAR-Soundbar-Wireless-Streaming/dp/B00AEMGGU2)
 - IKEA Tradfri
-    - 1 x [Gateway](https://www.amazon.com/TRÅDFRI-Gateway/dp/B074XL6LG1/)
-    - 1 x [Wireless Motion Sensor](https://www.amazon.com/IKEA-Tradfri-203-389-44-Motion-Sensor/dp/B07CF4B7RT/)
+    - 1 x Gateway
+    - 1 x Wireless Motion Sensor
     - 6 x Bulb GU10 White
     - 3 x Bulb GU10 White Ambiance
     - 1 x Bulb E27
     - 1 x Remote control
 - Philips Hue
-    - 1 x [Bridge V2.1](https://www.amazon.com/Philips-Hue-Smart-Bridge-Refurbished/dp/B07C37Q882/)
-    - 3 x [E27 White Ambiance](https://www.amazon.com/Philips-464487-Equivalent-Compatible-Assistant/dp/B01M9AU8MB/)
-    - 2 x [GU 10 White Ambiance](https://www.amazon.com/Philips-Ambiance-Dimmable-Compatible-Assistant/dp/B01N4GBZU4/)
-    - 12 x [GU 10 White and Color Ambiance](https://www.amazon.com/Philips-Ambiance-Dimmable-Compatible-Assistant/dp/B014H2OZ3O/)
-    - 1 x [Smart Dimmer Switch](https://www.amazon.com/Philips-Dimmer-Switch-Installation-Free-Exclusively/dp/B076MGKTGS/)
+    - 1 x Bridge V2.1
+    - 3 x E27 White Ambiance
+    - 2 x GU 10 White Ambiance
+    - 12 x GU 10 White and Color Ambiance
+    - 1 x Smart Dimmer Switch
 - Xiaomi Aqara
     - 1 x Gateway
     - 6 x Aqara Temperature and Humidity Sensor
@@ -37,4 +35,22 @@
     - 1 x Aqara Water Leak Sensor
     - 2 x Mi Window and Door Sensor
     - 1 x Aqara Window and Door Sensor
-- [Logitech Harmony](https://www.amazon.com/Logitech-Harmony-Elite-Remote-Control/dp/B014PDFP9S/)
+- RFXCOM
+    - RFXtrx433E USB 433.92MHz Transceiver
+- Z-wave
+    - 1 x Zwave.me USB Controller
+- Nest
+    - 1 x Nest Learning Thermostat v2
+    - 2 x Nest Cam IQ indoor
+- Logitech Harmony Elite + Harmony Hub
+- Sonos Playbar
+- Apple TV 3rd Generation
+- Kodi on Raspberry Pi 3 Model B+ using [OSMC.tv]
+- ISKRA AM550 Smart Meter using P1 Converter Cable
+- DIY Ledstrip
+- Moodo Smart Home Fragrance 
+
+### Services
+- Darksky
+- Octoprint
+- 
