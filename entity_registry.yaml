@@ -1,0 +1,355 @@
+media_player.apple_tv:
+  config_entry_id:
+  name:
+  platform: apple_tv
+  unique_id: e9b6fcfe0959f97da36b7163930e6ba1b8078087685e7aa3fae7b94f7d29c992
+remote.apple_tv:
+  config_entry_id:
+  name:
+  platform: apple_tv
+  unique_id: e9b6fcfe0959f97da36b7163930e6ba1b8078087685e7aa3fae7b94f7d29c992
+sensor.temperature_158d0001f535fe:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: temperature158d0001f535fe
+sensor.pressure_158d000201874c:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: pressure158d000201874c
+sensor.humidity_158d0001f55ac3:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: humidity158d0001f55ac3
+sensor.temperature_158d0001f55ac3:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: temperature158d0001f55ac3
+sensor.temperature_158d0001fead51:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: temperature158d0001fead51
+sensor.humidity_158d0001f535fe:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: humidity158d0001f535fe
+sensor.humidity_158d0002029378:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: humidity158d0002029378
+sensor.humidity_158d00020265b9:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: humidity158d00020265b9
+sensor.pressure_158d0001f55ac3:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: pressure158d0001f55ac3
+sensor.humidity_158d0001fa9a9b:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: humidity158d0001fa9a9b
+sensor.temperature_158d0001fa9a9b:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: temperature158d0001fa9a9b
+sensor.pressure_158d0001fa9a9b:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: pressure158d0001fa9a9b
+sensor.humidity_158d0001fead51:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: humidity158d0001fead51
+sensor.humidity_158d0001fa6d2a:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: humidity158d0001fa6d2a
+sensor.temperature_158d0002029378:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: temperature158d0002029378
+sensor.humidity_158d000201874c:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: humidity158d000201874c
+sensor.pressure_158d0001f535fe:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: pressure158d0001f535fe
+sensor.illumination_34ce0091ec51:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: illumination34ce0091ec51
+sensor.pressure_158d0001d6d0c8:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: pressure158d0001d6d0c8
+sensor.temperature_158d000201874c:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: temperature158d000201874c
+sensor.pressure_158d0001fa6d2a:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: pressure158d0001fa6d2a
+sensor.temperature_158d0001d6d0c8:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: temperature158d0001d6d0c8
+sensor.illumination_158d0001e50c69:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: lux158d0001e50c69
+sensor.humidity_158d0001d6d0c8:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: humidity158d0001d6d0c8
+sensor.temperature_158d00020265b9:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: temperature158d00020265b9
+sensor.illumination_158d0001ddb2f3:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: lux158d0001ddb2f3
+sensor.temperature_158d0001fa6d2a:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: temperature158d0001fa6d2a
+binary_sensor.switch_158d00021360b7:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d00021360b7
+binary_sensor.water_leak_sensor_158d000214f503:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d000214f503
+binary_sensor.door_window_sensor_158d0001c20a44:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001c20a44
+binary_sensor.door_window_sensor_158d0001de8c85:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001de8c85
+binary_sensor.door_window_sensor_158d0001bb50eb:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001bb50eb
+binary_sensor.switch_158d0001e010d8:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001e010d8
+binary_sensor.motion_sensor_158d0001e50c69:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001e50c69
+binary_sensor.motion_sensor_158d0001ddb2f3:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: status158d0001ddb2f3
+light.gateway_light_34ce0091ec51:
+  config_entry_id:
+  name:
+  platform: xiaomi_aqara
+  unique_id: rgb34ce0091ec51
+media_player.sonos_woonkamer:
+  config_entry_id: 6559d809684841038a67a4cea1079b2a
+  name:
+  platform: sonos
+  unique_id: RINCON_5CAAFDA79C1A01400
+light.gang_beneden_1:
+  config_entry_id: f7af292b3ed84b23866ea9d41b46071f
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:00:db:cd:42-0b
+light.babykamer_3:
+  config_entry_id: f7af292b3ed84b23866ea9d41b46071f
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:10:3c:2b:ac-0b
+light.eetkamer_1:
+  config_entry_id: f7af292b3ed84b23866ea9d41b46071f
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:00:e4:7e:b8-0b
+light.badkamer_2:
+  config_entry_id: f7af292b3ed84b23866ea9d41b46071f
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:00:df:3e:72-0b
+light.slaapkamer_3:
+  config_entry_id: f7af292b3ed84b23866ea9d41b46071f
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:10:3c:2a:be-0b
+light.woonkamer_3:
+  config_entry_id: f7af292b3ed84b23866ea9d41b46071f
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:00:d2:1a:18-0b
+light.eetkamer_2:
+  config_entry_id: f7af292b3ed84b23866ea9d41b46071f
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:00:e4:63:64-0b
+light.slaapkamer_2:
+  config_entry_id: f7af292b3ed84b23866ea9d41b46071f
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:10:35:f2:ab-0b
+light.slaapkamer_1:
+  config_entry_id: f7af292b3ed84b23866ea9d41b46071f
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:10:35:f8:0e-0b
+light.gang_boven_2:
+  config_entry_id: f7af292b3ed84b23866ea9d41b46071f
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:00:df:3b:93-0b
+light.woonkamer_1:
+  config_entry_id: f7af292b3ed84b23866ea9d41b46071f
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:00:e0:bb:ad-0b
+light.kinderkamer_3:
+  config_entry_id: f7af292b3ed84b23866ea9d41b46071f
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:b8:b5:c0-0b
+light.kinderkamer_2:
+  config_entry_id: f7af292b3ed84b23866ea9d41b46071f
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:b8:b6:53-0b
+light.kinderkamer_1:
+  config_entry_id: f7af292b3ed84b23866ea9d41b46071f
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:02:b8:b6:59-0b
+light.babykamer_1:
+  config_entry_id: f7af292b3ed84b23866ea9d41b46071f
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:10:35:f2:76-0b
+light.woonkamer_2_2:
+  config_entry_id: f7af292b3ed84b23866ea9d41b46071f
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:00:e0:bc:cc-0b
+light.washok_1:
+  config_entry_id: f7af292b3ed84b23866ea9d41b46071f
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:00:db:cc:a9-0b
+light.babykamer_2:
+  config_entry_id: f7af292b3ed84b23866ea9d41b46071f
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:10:35:e1:41-0b
+light.berging_1:
+  config_entry_id:
+  name:
+  platform: tradfri
+  unique_id: light-7e0c3952048000d8-65544
+light.garderobe_3:
+  config_entry_id:
+  name:
+  platform: tradfri
+  unique_id: light-7e0c3952048000d8-65552
+light.wc_beneden:
+  config_entry_id:
+  name:
+  platform: tradfri
+  unique_id: light-7e0c3952048000d8-65543
+light.kantoor_2:
+  config_entry_id:
+  name:
+  platform: tradfri
+  unique_id: light-7e0c3952048000d8-65538
+light.kantoor_3:
+  config_entry_id:
+  name:
+  platform: tradfri
+  unique_id: light-7e0c3952048000d8-65539
+light.garderobe_1:
+  config_entry_id:
+  name:
+  platform: tradfri
+  unique_id: light-7e0c3952048000d8-65550
+light.berging_2:
+  config_entry_id:
+  name:
+  platform: tradfri
+  unique_id: light-7e0c3952048000d8-65545
+light.berging_3:
+  config_entry_id:
+  name:
+  platform: tradfri
+  unique_id: light-7e0c3952048000d8-65546
+light.kantoor_1:
+  config_entry_id:
+  name:
+  platform: tradfri
+  unique_id: light-7e0c3952048000d8-65537
+light.garderobe_2:
+  config_entry_id:
+  name:
+  platform: tradfri
+  unique_id: light-7e0c3952048000d8-65551
+light.berging:
+  config_entry_id:
+  name:
+  platform: tradfri
+  unique_id: group-7e0c3952048000d8-158301
+light.tradfri_group_3:
+  config_entry_id:
+  name:
+  platform: tradfri
+  unique_id: group-7e0c3952048000d8-158302
+light.kantoor:
+  config_entry_id:
+  name:
+  platform: tradfri
+  unique_id: group-7e0c3952048000d8-158300
+light.wc_beneden_2:
+  config_entry_id:
+  name:
+  platform: tradfri
+  unique_id: group-7e0c3952048000d8-158303
