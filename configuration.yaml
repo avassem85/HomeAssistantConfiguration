@@ -6,60 +6,98 @@ homeassistant:
   unit_system: metric
   time_zone: !secret HOME_TIME_ZONE
   customize: !include customize.yaml
+  packages: !include_dir_named packages
+  auth_providers:
+   - type: homeassistant
+   - type: legacy_api_password
 
-# Show links to resources in log and frontend
-introduction:
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+
+# Discover some devices automatically
+discovery:
+# Enables the auth component
+auth:
+
+# ########################################
+# ###                UI                ###
+# ########################################
+
+# Configure Home Assistant to use HTTPS
+http:
+  base_url: !secret HTTP_URL
+  api_password: !secret HTTP_PASSWORD
+  ssl_certificate: !secret SSL_CERTIFICATE
+  ssl_key: !secret SSL_KEY
+  trusted_networks:
+    - !secret HTTP_TRUSTED_IP_INTERNAL
+  login_attempts_threshold: 3
 
 # Enables the frontend
 frontend:
+  javascript_version: latest
+  themes:
+    darkblue:
+      primary-color: "#396FB6"
+      light-primary-color: "#77a0d4"
+      dark-primary-color: "#3539ce"
+      text-primary-color: "#ffffff"
+      primary-background-color: "#37464f"
+      sidebar-text_-_background: "#3c4348"
+      paper-card-background-color: "#263137"
+      paper-card-header-color: "var(--text-primary-color)"
+      secondary-background-color: "var(--primary-background-color)"
+      primary-text-color: "var(--text-primary-color)"
+      secondary-text-color: "var(--primary-color)"
+      paper-listbox-background-color: "var(--sidebar-text_-_background)"
+      paper-toggle-button-checked-ink-color: "var(--dark-primary-color)"
+      paper-toggle-button-checked-button-color: "var(--dark-primary-color)"
+      paper-toggle-button-checked-bar-color: "var(--dark-primary-color)"
+      paper-slider-knob-color: "var(--primary-color)"
+      paper-slider-knob-start-color: "var(--primary-color)"
+      paper-slider-pin-color: "var(--primary-color)"
+      paper-slider-active-color: "var(--primary-color)"
+      paper-slider-secondary-color: "var(--light-primary-color)"
+      paper-slider-container-color: "var(--sidebar-text_-_background)"
+      paper-progress-secondary-color: "var(--sidebar-text_-_background)"
+      paper-item-selected_-_background-color: "var(--primary-color)"
+      paper-item-icon_-_color: "var(--text-primary-color)"
+      paper-item-icon-color: "var(--text-primary-color)"
+      paper-item-icon-active-color: "var(--primary-color)"
+      paper-grey-50: "var(--sidebar-text_-_background)"
+      paper-grey-200: "var(--primary-background-color)"
+      label-badge-background-color: "var(--sidebar-text_-_background)"
+      label-badge-text-color: "var(--text-primary-color)"
+      label-badge-red: "var(--primary-color)"
+      label-badge-blue: "var(--light-primary-color)"
+      label-badge-green: "var(--dark-primary-color)"
+      label-badge-yellow: "var(--text-primary-color)"
+      label-badge-grey: "var(--paper-grey-500)"
+      table-row-background-color: "var(--paper-card-background-color)"
+      table-row-alternative-background-color: "var(--sidebar-text_-_background)"
+
+# Enables a map showing the location of tracked devices
+map:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables the Hassio configuration
+hassio:
+
+# Enables Home Assistant Cloud
+cloud:
 
 # Enables configuration UI
 config:
 
-http:
-  # Secrets are defined in the file secrets.yaml
-  # api_password: !secret http_password
-  # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
-  # base_url: example.duckdns.org:8123
-
-# Checks for available updates
-# Note: This component will send some information about your system to
-# the developers to assist with development of Home Assistant.
-# For more information, please see:
-# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
-updater:
-  # Optional, allows Home Assistant developers to focus on popular components.
-  # include_used_components: true
-
-# Discover some devices automatically
-discovery:
-
-# Allows you to issue voice commands from the frontend in enabled browsers
-conversation:
+# ########################################
+# ###              LOGGING             ###
+# ########################################
 
 # Enables support for tracking state changes over time
 history:
 
 # View all events in a logbook
 logbook:
-
-# Enables a map showing the location of tracked devices
-map:
-
-# Track the sun
-sun:
-
-# Weather prediction
-sensor:
-  - platform: yr
-
-# Text to speech
-tts:
-  - platform: google
-
-# Cloud
-cloud:
-
-group: !include groups.yaml
-automation: !include automations.yaml
-script: !include scripts.yaml

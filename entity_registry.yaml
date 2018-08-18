@@ -150,7 +150,7 @@ binary_sensor.switch_158d00021360b7:
   unique_id: status158d00021360b7
 binary_sensor.water_leak_sensor_158d000214f503:
   config_entry_id:
-  name:
+  name: Washok - Watersensor
   platform: xiaomi_aqara
   unique_id: status158d000214f503
 binary_sensor.door_window_sensor_158d0001c20a44:
@@ -165,7 +165,7 @@ binary_sensor.door_window_sensor_158d0001de8c85:
   unique_id: status158d0001de8c85
 binary_sensor.door_window_sensor_158d0001bb50eb:
   config_entry_id:
-  name:
+  name: Kantoor - Deursensor
   platform: xiaomi_aqara
   unique_id: status158d0001bb50eb
 binary_sensor.switch_158d0001e010d8:
@@ -175,7 +175,7 @@ binary_sensor.switch_158d0001e010d8:
   unique_id: status158d0001e010d8
 binary_sensor.motion_sensor_158d0001e50c69:
   config_entry_id:
-  name:
+  name: Kantoor - Bewegingsmelder
   platform: xiaomi_aqara
   unique_id: status158d0001e50c69
 binary_sensor.motion_sensor_158d0001ddb2f3:
@@ -188,11 +188,6 @@ light.gateway_light_34ce0091ec51:
   name:
   platform: xiaomi_aqara
   unique_id: rgb34ce0091ec51
-media_player.sonos_woonkamer:
-  config_entry_id: 6559d809684841038a67a4cea1079b2a
-  name:
-  platform: sonos
-  unique_id: RINCON_5CAAFDA79C1A01400
 light.gang_beneden_1:
   config_entry_id: f7af292b3ed84b23866ea9d41b46071f
   name:
@@ -353,3 +348,8 @@ light.wc_beneden_2:
   name:
   platform: tradfri
   unique_id: group-7e0c3952048000d8-158303
+media_player.sonos:
+  config_entry_id: 6559d809684841038a67a4cea1079b2a
+  name: Woonkamer - Sonos
+  platform: sonos
+  unique_id: RINCON_5CAAFDA79C1A01400

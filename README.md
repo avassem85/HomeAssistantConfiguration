@@ -3,9 +3,11 @@
 ## TODO
 - [x] Add Travis-CI
 - [x] Setup Basic Configuration
-- [ ] Setup HTTPS + DuckDNS
-- [ ] Setup the use packages
+- [x] Setup HTTPS + DuckDNS
+- [ ] Using the new authentication system
+- [x] Setup the use packages
 - [ ] Setup MQTT
+- [ ] Setup Lovelace UI
 
 ## Current Configuration
 * Raspberry Pi 3 Model B+ using [Hass.io](https://home-assistant.io/hassio/)
