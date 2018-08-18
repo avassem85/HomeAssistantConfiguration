@@ -1,0 +1,122 @@
+title: My Lovely Home Automation
+views:
+  - title: Home
+    cards:
+      - type: media-control
+        entity: media_player.sonos
+
+      - type: entities
+        title: Binary Sensors
+        show_header_toggle: true
+        entities:
+          - binary_sensor.door_window_sensor_158d0001bb50eb
+          - binary_sensor.door_window_sensor_158d0001c20a44
+          - binary_sensor.door_window_sensor_158d0001de8c85
+          - binary_sensor.motion_sensor_158d0001ddb2f3
+          - binary_sensor.motion_sensor_158d0001e50c69
+          - binary_sensor.switch_158d0001e010d8
+          - binary_sensor.switch_158d00021360b7
+          - binary_sensor.water_leak_sensor_158d000214f503
+
+      - type: entities
+        title: Group
+        show_header_toggle: true
+        entities:
+          - group.all_lights
+
+      - type: entities
+        title: Lights
+        show_header_toggle: true
+        entities:
+          - light.babykamer
+          - light.babykamer_1
+          - light.babykamer_2
+          - light.babykamer_3
+          - light.badkamer
+          - light.badkamer_2
+          - light.berging
+          - light.berging_1
+          - light.berging_2
+          - light.berging_3
+          - light.eetkamer
+          - light.eetkamer_1
+          - light.eetkamer_2
+          - light.gang_beneden
+          - light.gang_beneden_1
+          - light.gang_boven
+          - light.gang_boven_2
+          - light.garderobe_1
+          - light.garderobe_2
+          - light.garderobe_3
+          - light.gateway_light_34ce0091ec51
+          - light.hgrp0000016382
+          - light.hgrp0000524286
+          - light.kantoor
+          - light.kantoor_1
+          - light.kantoor_2
+          - light.kantoor_3
+          - light.kinderkamer_1
+          - light.kinderkamer_2
+          - light.kinderkamer_3
+          - light.kinderkamer_elise
+          - light.slaapkamer
+          - light.slaapkamer_1
+          - light.slaapkamer_2
+          - light.slaapkamer_3
+          - light.tradfri_group_3
+          - light.washok
+          - light.washok_1
+          - light.wc_beneden
+          - light.wc_beneden_2
+          - light.woonkamer
+          - light.woonkamer_1
+          - light.woonkamer_2
+          - light.woonkamer_2_2
+          - light.woonkamer_3
+
+      - type: entities
+        title: Persistent Notification
+        show_header_toggle: true
+        entities:
+          - persistent_notification.httplogin
+
+      - type: entities
+        title: Sensors
+        show_header_toggle: true
+        entities:
+          - sensor.humidity_158d0001d6d0c8
+          - sensor.humidity_158d0001f535fe
+          - sensor.humidity_158d0001f55ac3
+          - sensor.humidity_158d0001fa6d2a
+          - sensor.humidity_158d0001fa9a9b
+          - sensor.humidity_158d0001fead51
+          - sensor.humidity_158d000201874c
+          - sensor.humidity_158d00020265b9
+          - sensor.humidity_158d0002029378
+          - sensor.illumination_158d0001ddb2f3
+          - sensor.illumination_158d0001e50c69
+          - sensor.illumination_34ce0091ec51
+          - sensor.pressure_158d0001d6d0c8
+          - sensor.pressure_158d0001f535fe
+          - sensor.pressure_158d0001f55ac3
+          - sensor.pressure_158d0001fa6d2a
+          - sensor.pressure_158d0001fa9a9b
+          - sensor.pressure_158d000201874c
+          - sensor.temperature_158d0001d6d0c8
+          - sensor.temperature_158d0001f535fe
+          - sensor.temperature_158d0001f55ac3
+          - sensor.temperature_158d0001fa6d2a
+          - sensor.temperature_158d0001fa9a9b
+          - sensor.temperature_158d0001fead51
+          - sensor.temperature_158d000201874c
+          - sensor.temperature_158d00020265b9
+          - sensor.temperature_158d0002029378
+          - sensor.tradfri_motion_sensor
+          - sensor.tradfri_remote_control
+          - sensor.yr_symbol
+
+      - type: entities
+        title: Sun
+        show_header_toggle: true
+        entities:
+          - sun.sun

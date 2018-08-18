@@ -6,7 +6,10 @@
 - [x] Setup HTTPS + DuckDNS
 - [ ] Using the new authentication system
 - [x] Setup the use packages
+- [ ] Setup IOS
 - [ ] Setup MQTT
+- [ ] Setup Nest Devices
+- [ ] Setup Z-wave Devices
 - [ ] Setup Lovelace UI
 
 ## Current Configuration
