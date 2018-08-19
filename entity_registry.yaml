@@ -203,11 +203,6 @@ light.eetkamer_1:
   name:
   platform: hue
   unique_id: 00:17:88:01:00:e4:7e:b8-0b
-light.badkamer_2:
-  config_entry_id: f7af292b3ed84b23866ea9d41b46071f
-  name:
-  platform: hue
-  unique_id: 00:17:88:01:00:df:3e:72-0b
 light.slaapkamer_3:
   config_entry_id: f7af292b3ed84b23866ea9d41b46071f
   name:
@@ -233,11 +228,6 @@ light.slaapkamer_1:
   name:
   platform: hue
   unique_id: 00:17:88:01:10:35:f8:0e-0b
-light.gang_boven_2:
-  config_entry_id: f7af292b3ed84b23866ea9d41b46071f
-  name:
-  platform: hue
-  unique_id: 00:17:88:01:00:df:3b:93-0b
 light.woonkamer_1:
   config_entry_id: f7af292b3ed84b23866ea9d41b46071f
   name:
@@ -353,3 +343,18 @@ media_player.sonos:
   name: Woonkamer - Sonos
   platform: sonos
   unique_id: RINCON_5CAAFDA79C1A01400
+climate.living_room:
+  config_entry_id: a7ce931ce33249279d8da06b008da036
+  name:
+  platform: nest
+  unique_id: URYscqkbAq5tDCs5LJaxthiODRD1_LxZ
+light.gang_boven_1:
+  config_entry_id: f7af292b3ed84b23866ea9d41b46071f
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:00:df:3b:93-0b
+light.badkamer_1:
+  config_entry_id: f7af292b3ed84b23866ea9d41b46071f
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:00:df:3e:72-0b

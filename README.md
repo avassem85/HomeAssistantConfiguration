@@ -11,6 +11,7 @@
 - [ ] Setup Nest Devices
 - [ ] Setup Z-wave Devices
 - [ ] Setup Lovelace UI
+- [ ] Setup Hassio Node-Red
 
 ## Current Configuration
 * Raspberry Pi 3 Model B+ using [Hass.io](https://home-assistant.io/hassio/)
