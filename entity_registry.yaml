@@ -8,96 +8,11 @@ remote.apple_tv:
   name:
   platform: apple_tv
   unique_id: e9b6fcfe0959f97da36b7163930e6ba1b8078087685e7aa3fae7b94f7d29c992
-sensor.temperature_158d0001f535fe:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: temperature158d0001f535fe
-sensor.pressure_158d000201874c:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: pressure158d000201874c
-sensor.temperature_158d0001fead51:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: temperature158d0001fead51
-sensor.humidity_158d0001f535fe:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: humidity158d0001f535fe
-sensor.humidity_158d0002029378:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: humidity158d0002029378
-sensor.humidity_158d00020265b9:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: humidity158d00020265b9
-sensor.pressure_158d0001f55ac3:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: pressure158d0001f55ac3
-sensor.humidity_158d0001fa9a9b:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: humidity158d0001fa9a9b
-sensor.temperature_158d0001fa9a9b:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: temperature158d0001fa9a9b
-sensor.pressure_158d0001fa9a9b:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: pressure158d0001fa9a9b
-sensor.humidity_158d0001fead51:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: humidity158d0001fead51
-sensor.humidity_158d0001fa6d2a:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: humidity158d0001fa6d2a
-sensor.temperature_158d0002029378:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: temperature158d0002029378
-sensor.humidity_158d000201874c:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: humidity158d000201874c
-sensor.pressure_158d0001f535fe:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: pressure158d0001f535fe
 sensor.pressure_158d0001d6d0c8:
   config_entry_id:
   name:
   platform: xiaomi_aqara
   unique_id: pressure158d0001d6d0c8
-sensor.temperature_158d000201874c:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: temperature158d000201874c
-sensor.pressure_158d0001fa6d2a:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: pressure158d0001fa6d2a
 sensor.temperature_158d0001d6d0c8:
   config_entry_id:
   name:
@@ -108,16 +23,6 @@ sensor.humidity_158d0001d6d0c8:
   name:
   platform: xiaomi_aqara
   unique_id: humidity158d0001d6d0c8
-sensor.temperature_158d00020265b9:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: temperature158d00020265b9
-sensor.temperature_158d0001fa6d2a:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: temperature158d0001fa6d2a
 binary_sensor.switch_158d00021360b7:
   config_entry_id:
   name: Xiaomi - Button 2
@@ -273,11 +178,6 @@ media_player.sonos:
   name: Woonkamer - Sonos
   platform: sonos
   unique_id: RINCON_5CAAFDA79C1A01400
-climate.living_room:
-  config_entry_id: a7ce931ce33249279d8da06b008da036
-  name:
-  platform: nest
-  unique_id: URYscqkbAq5tDCs5LJaxthiODRD1_LxZ
 light.gang_boven_1:
   config_entry_id: f7af292b3ed84b23866ea9d41b46071f
   name:
@@ -363,3 +263,103 @@ sensor.humidity_kantoor:
   name: Kantoor - Luchtvochtigheid
   platform: xiaomi_aqara
   unique_id: humidity158d0001f55ac3
+climate.woonkamer:
+  config_entry_id: a7ce931ce33249279d8da06b008da036
+  name:
+  platform: nest
+  unique_id: URYscqkbAq5tDCs5LJaxthiODRD1_LxZ
+sensor.humidity_washok:
+  config_entry_id:
+  name: Washok - Luchtvochtigheid
+  platform: xiaomi_aqara
+  unique_id: humidity158d00020265b9
+sensor.temperature_washok:
+  config_entry_id:
+  name: Washok - Temperatuur
+  platform: xiaomi_aqara
+  unique_id: temperature158d00020265b9
+sensor.temperature_wc_beneden:
+  config_entry_id:
+  name: WC Beneden - Temperatuur
+  platform: xiaomi_aqara
+  unique_id: temperature158d0001fa9a9b
+sensor.humidity_wc_beneden:
+  config_entry_id:
+  name: WC Beneden - Luchtvochtigheid
+  platform: xiaomi_aqara
+  unique_id: humidity158d0001fa9a9b
+sensor.pressure_wc_beneden:
+  config_entry_id:
+  name: WC Beneden - Luchtdruk
+  platform: xiaomi_aqara
+  unique_id: pressure158d0001fa9a9b
+sensor.pressure_slaapkamer_aa:
+  config_entry_id:
+  name: Slaapkamer Alex & Anita - Luchtdruk
+  platform: xiaomi_aqara
+  unique_id: pressure158d000201874c
+sensor.humidity_slaapkamer_aa:
+  config_entry_id:
+  name: Slaapkamer Alex & Anita - Luchtvochtigheid
+  platform: xiaomi_aqara
+  unique_id: humidity158d000201874c
+sensor.temperature_slaapkamer_aa:
+  config_entry_id:
+  name: Slaapkamer Alex & Anita - Temperatuur
+  platform: xiaomi_aqara
+  unique_id: temperature158d000201874c
+sensor.temperature_badkamer:
+  config_entry_id:
+  name: Badkamer - Temperatuur
+  platform: xiaomi_aqara
+  unique_id: temperature158d0001fead51
+sensor.humidity_badkamer:
+  config_entry_id:
+  name: Badkamer - Luchtvochtigheid
+  platform: xiaomi_aqara
+  unique_id: humidity158d0001fead51
+sensor.temperature_slaapkamer_elise:
+  config_entry_id:
+  name: Slaapkamer Elise - Temperatuur
+  platform: xiaomi_aqara
+  unique_id: temperature158d0001f535fe
+sensor.pressure_slaapkamer_elise:
+  config_entry_id:
+  name: Slaapkamer Elise - Luchtdruk
+  platform: xiaomi_aqara
+  unique_id: pressure158d0001f535fe
+sensor.humidity_slaapkamer_elise:
+  config_entry_id:
+  name: Slaapkamer Elise - Luchtvochtigheid
+  platform: xiaomi_aqara
+  unique_id: humidity158d0001f535fe
+sensor.humidity_wc_boven:
+  config_entry_id:
+  name: WC Boven - Luchtvochtigheid
+  platform: xiaomi_aqara
+  unique_id: humidity158d0001fa6d2a
+sensor.pressure_wc_boven:
+  config_entry_id:
+  name: WC Boven - Luchtdruk
+  platform: xiaomi_aqara
+  unique_id: pressure158d0001fa6d2a
+sensor.temperature_wc_boven:
+  config_entry_id:
+  name: WC Boven - Temperatuur
+  platform: xiaomi_aqara
+  unique_id: temperature158d0001fa6d2a
+sensor.humidity_slaapkamer_luuk:
+  config_entry_id:
+  name: Slaapkamer Luuk - Luchtvochtigheid
+  platform: xiaomi_aqara
+  unique_id: humidity158d0002029378
+sensor.temperature_slaapkamer_luuk:
+  config_entry_id:
+  name: Slaapkamer Luuk - Temperatuur
+  platform: xiaomi_aqara
+  unique_id: temperature158d0002029378
+sensor.pressure_kantoor:
+  config_entry_id:
+  name: Kantoor - Luchtdruk
+  platform: xiaomi_aqara
+  unique_id: pressure158d0001f55ac3
