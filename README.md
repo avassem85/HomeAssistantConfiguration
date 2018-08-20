@@ -6,11 +6,11 @@
 - [x] Setup HTTPS + DuckDNS
 - [ ] Using the new authentication system
 - [x] Setup the use packages
-- [ ] Setup IOS
-- [ ] Setup MQTT
-- [ ] Setup Nest Devices
+- [x] Setup IOS
+- [x] Setup MQTT
+- [x] Setup Nest Devices
 - [ ] Setup Z-wave Devices
-- [ ] Setup Lovelace UI
+- [x] Setup Lovelace UI
 - [ ] Setup Hassio Node-Red
 
 ## Current Configuration

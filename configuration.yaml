@@ -44,6 +44,9 @@ frontend:
   javascript_version: latest
   themes: !include_dir_merge_named themes
 
+shell_command:
+  lovelace_gen: 'python /config/lovelace-gen.py'
+
 # Enables a map showing the location of tracked devices
 map:
 
