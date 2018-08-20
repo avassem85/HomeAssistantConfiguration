@@ -18,16 +18,6 @@ sensor.pressure_158d000201874c:
   name:
   platform: xiaomi_aqara
   unique_id: pressure158d000201874c
-sensor.humidity_158d0001f55ac3:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: humidity158d0001f55ac3
-sensor.temperature_158d0001f55ac3:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: temperature158d0001f55ac3
 sensor.temperature_158d0001fead51:
   config_entry_id:
   name:
@@ -93,11 +83,6 @@ sensor.pressure_158d0001f535fe:
   name:
   platform: xiaomi_aqara
   unique_id: pressure158d0001f535fe
-sensor.illumination_34ce0091ec51:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: illumination34ce0091ec51
 sensor.pressure_158d0001d6d0c8:
   config_entry_id:
   name:
@@ -118,11 +103,6 @@ sensor.temperature_158d0001d6d0c8:
   name:
   platform: xiaomi_aqara
   unique_id: temperature158d0001d6d0c8
-sensor.illumination_158d0001e50c69:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: lux158d0001e50c69
 sensor.humidity_158d0001d6d0c8:
   config_entry_id:
   name:
@@ -133,11 +113,6 @@ sensor.temperature_158d00020265b9:
   name:
   platform: xiaomi_aqara
   unique_id: temperature158d00020265b9
-sensor.illumination_158d0001ddb2f3:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: lux158d0001ddb2f3
 sensor.temperature_158d0001fa6d2a:
   config_entry_id:
   name:
@@ -145,49 +120,14 @@ sensor.temperature_158d0001fa6d2a:
   unique_id: temperature158d0001fa6d2a
 binary_sensor.switch_158d00021360b7:
   config_entry_id:
-  name:
+  name: Xiaomi - Button 2
   platform: xiaomi_aqara
   unique_id: status158d00021360b7
-binary_sensor.water_leak_sensor_158d000214f503:
-  config_entry_id:
-  name: Washok - Watersensor
-  platform: xiaomi_aqara
-  unique_id: status158d000214f503
-binary_sensor.door_window_sensor_158d0001c20a44:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: status158d0001c20a44
-binary_sensor.door_window_sensor_158d0001de8c85:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: status158d0001de8c85
-binary_sensor.door_window_sensor_158d0001bb50eb:
-  config_entry_id:
-  name: Kantoor - Deursensor
-  platform: xiaomi_aqara
-  unique_id: status158d0001bb50eb
 binary_sensor.switch_158d0001e010d8:
   config_entry_id:
-  name:
+  name: Xiaomi - Button 1
   platform: xiaomi_aqara
   unique_id: status158d0001e010d8
-binary_sensor.motion_sensor_158d0001e50c69:
-  config_entry_id:
-  name: Kantoor - Bewegingsmelder
-  platform: xiaomi_aqara
-  unique_id: status158d0001e50c69
-binary_sensor.motion_sensor_158d0001ddb2f3:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: status158d0001ddb2f3
-light.gateway_light_34ce0091ec51:
-  config_entry_id:
-  name:
-  platform: xiaomi_aqara
-  unique_id: rgb34ce0091ec51
 light.gang_beneden_1:
   config_entry_id: f7af292b3ed84b23866ea9d41b46071f
   name:
@@ -253,11 +193,6 @@ light.babykamer_1:
   name:
   platform: hue
   unique_id: 00:17:88:01:10:35:f2:76-0b
-light.woonkamer_2_2:
-  config_entry_id: f7af292b3ed84b23866ea9d41b46071f
-  name:
-  platform: hue
-  unique_id: 00:17:88:01:00:e0:bc:cc-0b
 light.washok_1:
   config_entry_id: f7af292b3ed84b23866ea9d41b46071f
   name:
@@ -333,11 +268,6 @@ light.kantoor:
   name:
   platform: tradfri
   unique_id: group-7e0c3952048000d8-158300
-light.wc_beneden_2:
-  config_entry_id:
-  name:
-  platform: tradfri
-  unique_id: group-7e0c3952048000d8-158303
 media_player.sonos:
   config_entry_id: 6559d809684841038a67a4cea1079b2a
   name: Woonkamer - Sonos
@@ -358,3 +288,78 @@ light.badkamer_1:
   name:
   platform: hue
   unique_id: 00:17:88:01:00:df:3e:72-0b
+light.garderobe:
+  config_entry_id:
+  name:
+  platform: tradfri
+  unique_id: group-7e0c3952048000d8-158304
+light.wc_beneden_1:
+  config_entry_id:
+  name:
+  platform: tradfri
+  unique_id: group-7e0c3952048000d8-158303
+light.woonkamer_2:
+  config_entry_id: f7af292b3ed84b23866ea9d41b46071f
+  name:
+  platform: hue
+  unique_id: 00:17:88:01:00:e0:bc:cc-0b
+light.xiaomi_gateway:
+  config_entry_id:
+  name: Gateway - Lamp
+  platform: xiaomi_aqara
+  unique_id: rgb34ce0091ec51
+sensor.illumination_gateway:
+  config_entry_id:
+  name: Gateway - Licht
+  platform: xiaomi_aqara
+  unique_id: illumination34ce0091ec51
+sensor.illumination_motion_sensor_kantoor:
+  config_entry_id:
+  name: Kantoor - Licht
+  platform: xiaomi_aqara
+  unique_id: lux158d0001e50c69
+binary_sensor.motion_sensor_kantoor:
+  config_entry_id:
+  name: Kantoor - Beweging
+  platform: xiaomi_aqara
+  unique_id: status158d0001e50c69
+sensor.illumination_motion_sensor_berging:
+  config_entry_id:
+  name: Berging - Licht
+  platform: xiaomi_aqara
+  unique_id: lux158d0001ddb2f3
+binary_sensor.motion_sensor_berging:
+  config_entry_id:
+  name: Berging - Beweging
+  platform: xiaomi_aqara
+  unique_id: status158d0001ddb2f3
+binary_sensor.water_leak_sensor_washok:
+  config_entry_id:
+  name: Washok - Watersensor
+  platform: xiaomi_aqara
+  unique_id: status158d000214f503
+binary_sensor.door_window_sensor_achterdeur:
+  config_entry_id:
+  name: Achterdeur - Deur
+  platform: xiaomi_aqara
+  unique_id: status158d0001c20a44
+binary_sensor.door_window_sensor_kantoor:
+  config_entry_id:
+  name: Kantoor - Deur
+  platform: xiaomi_aqara
+  unique_id: status158d0001bb50eb
+binary_sensor.door_window_sensor_washok:
+  config_entry_id:
+  name: Washok - Deur
+  platform: xiaomi_aqara
+  unique_id: status158d0001de8c85
+sensor.temperature_kantoor:
+  config_entry_id:
+  name: Kantoor - Temperatuur
+  platform: xiaomi_aqara
+  unique_id: temperature158d0001f55ac3
+sensor.humidity_kantoor:
+  config_entry_id:
+  name: Kantoor - Luchtvochtigheid
+  platform: xiaomi_aqara
+  unique_id: humidity158d0001f55ac3

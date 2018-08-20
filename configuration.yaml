@@ -17,6 +17,11 @@ script: !include scripts.yaml
 
 # Discover some devices automatically
 discovery:
+  # ignore:
+  #   - philips_hue
+  #   - ikea_tradfri
+  #   - sonos
+  #   - xiaomi_gw
 # Enables the auth component
 auth:
 
