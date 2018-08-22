@@ -1,0 +1,52 @@
+title: Home
+icon: mdi:home-assistant
+id: home
+cards:
+  - type: vertical-stack
+    cards:
+      - type: entities
+        show_header_toggle: false
+        entities:
+          - type: call-service
+            name: "Lovelace generator"
+            service: shell_command.lovelace_gen
+            icon: mdi:refresh
+            action_name: "Run"
+            service_data: {}
+
+      - type: custom:monster-card
+        show_empty: false
+        card:
+          type: glance
+        filter:
+          include:
+            - domain: persistent_notification
+
+      - type: custom:monster-card
+        card:
+          type: entities
+          title: Kapot
+          show_header_toggle: false
+        show_empty: false
+        filter:
+          include:
+            - state: "unknown"
+            - state: "unavailable"
+          exclude:
+            - entity_id: group.*
+
+      - type: custom:monster-card
+        card:
+          type: history-graph
+          title: Luchtvochtigheid
+        filter:
+          include:
+            - entity_id: "sensor.*humidity*"
+      
+      - type: custom:monster-card
+        card:
+          type: history-graph
+          title: Temperatuur
+        filter:
+          include:
+            - entity_id: "sensor.*temperature*"

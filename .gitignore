@@ -1,8 +1,5 @@
-*
-!*.yaml
-!scenes
-!.gitignore
-!README.md
-!.travis.yml
 secrets.yaml
+.*
+home-assistant*
 known_devices.yaml
+www/

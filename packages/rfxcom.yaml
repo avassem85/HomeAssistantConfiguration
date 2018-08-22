@@ -1,0 +1,30 @@
+homeassistant:
+  customize:
+    sensor.berging_temperature:
+      friendly_name: Berging - Temperatuur
+    sensor.berging_humidity:
+      friendly_name: Berging - Luchtvochtigheid
+
+rfxtrx:
+  device: /dev/ttyUSB0
+
+sensor:
+  platform: rfxtrx
+  devices:
+    0a520d006e01010d360179:
+      name: Berging
+      data_type:
+       - Humidity
+       - Temperature
+  # automatic_add: True
+
+group:
+  rfxcom_devices:
+    name: RFXCom Devices
+    entities:
+      - group.rfxcom_temp_hum_sensor_berging
+  rfxcom_temp_hum_sensor_berging:
+    name: RFXCom Devices - Temperature & Humidity Sensor - Berging
+    entities:
+      - sensor.berging_temperature
+      - sensor.berging_humidity
