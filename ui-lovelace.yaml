@@ -4,11 +4,54 @@
 # Any changes made to it will be overwritten the next time the script is run.
 
 resources:
-- {type: js, url: '/local/lovelace/monster-card.js?1534798082.4038043&v=0.2.3'}
+- {type: js, url: '/local/lovelace/monster-card.js?1534968494.9772792&v=0.2.3'}
+- {type: js, url: '/local/lovelace/tracker-card.js?1534968494.9772792&v=0.1.4'}
 title: Defensie-eiland 35
 views:
 - cards:
   - cards:
+    - entities: [sun.sun, sensor.yr_symbol]
+      type: glance
+    - card: {type: glance}
+      filter:
+        include:
+        - {domain: persistent_notification}
+      show_empty: false
+      type: custom:monster-card
+    - card: {show_header_toggle: false, title: Kapot2, type: entities}
+      filter:
+        exclude:
+        - {entity_id: group.*}
+        include:
+        - {state: unknown}
+        - {state: unavailable}
+      show_empty: false
+      type: custom:monster-card
+    - cards:
+      - card: {title: Luchtvochtigheid, type: history-graph}
+        filter:
+          include:
+          - {entity_id: sensor.*humidity*}
+        type: custom:monster-card
+      - card: {title: Temperatuur, type: history-graph}
+        filter:
+          include:
+          - {entity_id: sensor.*temperature*}
+        type: custom:monster-card
+      type: horizontal-stack
+    type: vertical-stack
+  icon: mdi:home-assistant
+  id: home
+  panel: true
+  title: Home
+- {id: downstairs, title: Beneden}
+- {id: living-room, title: Woonkamer}
+- {id: upstairs, title: Boven}
+- cards:
+  - cards:
+    - title: null
+      trackers: [sensor.custom_card_tracker]
+      type: custom:tracker-card
     - entities:
       - action_name: Run
         icon: mdi:refresh
@@ -18,35 +61,7 @@ views:
         type: call-service
       show_header_toggle: false
       type: entities
-    - card: {type: glance}
-      filter:
-        include:
-        - {domain: persistent_notification}
-      show_empty: false
-      type: custom:monster-card
-    - card: {show_header_toggle: false, title: Kapot, type: entities}
-      filter:
-        exclude:
-        - {entity_id: group.*}
-        include:
-        - {state: unknown}
-        - {state: unavailable}
-      show_empty: false
-      type: custom:monster-card
-    - card: {title: Luchtvochtigheid, type: history-graph}
-      filter:
-        include:
-        - {entity_id: sensor.*humidity*}
-      type: custom:monster-card
-    - card: {title: Temperatuur, type: history-graph}
-      filter:
-        include:
-        - {entity_id: sensor.*temperature*}
-      type: custom:monster-card
     type: vertical-stack
-  icon: mdi:home-assistant
-  id: home
-  title: Home
-- {id: downstairs, title: Beneden}
-- {id: living-room, title: Woonkamer}
-- {id: upstairs, title: Boven}
+  icon: mdi:television-guide
+  id: lovelace
+  title: Lovelace

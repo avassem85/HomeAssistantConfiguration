@@ -1,0 +1,20 @@
+title: Lovelace
+icon: mdi:television-guide
+id: lovelace
+cards:
+  - type: vertical-stack
+    cards:
+      - type: custom:tracker-card
+        title:
+        trackers:
+          - sensor.custom_card_tracker
+      
+      - type: entities
+        show_header_toggle: false
+        entities:
+          - type: call-service
+            name: "Lovelace generator"
+            service: shell_command.lovelace_gen
+            icon: mdi:refresh
+            action_name: "Run"
+            service_data: {}

@@ -3,9 +3,12 @@ title: Defensie-eiland 35
 resources:
   - url: !resource monster-card/monster-card.js?v=0.2.3
     type: js
+  - url: !resource tracker-card/tracker-card.js?v=0.1.4
+    type: js
 
 views:
   - !include 01_home_view.yaml
   - !include 02_downstairs.yaml
   - !include 03_living_room.yaml
   - !include 04_upstairs.yaml
+  - !include 98_lovelace_ui.yaml
