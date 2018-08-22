@@ -1,7 +1,5 @@
 secrets.yaml
 .*
-!.travis.yml
-!.gitignore
 home-assistant*
 known_devices.yaml
 www/
