@@ -4,11 +4,6 @@ id: lovelace
 cards:
   - type: vertical-stack
     cards:
-      - type: custom:tracker-card
-        title:
-        trackers:
-          - sensor.custom_card_tracker
-      
       - type: entities
         show_header_toggle: false
         entities:
@@ -18,3 +13,9 @@ cards:
             icon: mdi:refresh
             action_name: "Run"
             service_data: {}
+            
+      - type: custom:tracker-card
+        title:
+        trackers:
+          - sensor.custom_card_tracker
+      

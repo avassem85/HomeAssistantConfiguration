@@ -5,6 +5,8 @@ resources:
     type: js
   - url: !resource tracker-card/tracker-card.js?v=0.1.4
     type: js
+  - url: !resource column-card/column-card.js?v=0.0.1
+    type: js
 
 views:
   - !include 01_home_view.yaml

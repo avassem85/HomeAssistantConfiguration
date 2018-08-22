@@ -4,13 +4,14 @@
 # Any changes made to it will be overwritten the next time the script is run.
 
 resources:
-- {type: js, url: '/local/lovelace/monster-card.js?1534968494.9772792&v=0.2.3'}
-- {type: js, url: '/local/lovelace/tracker-card.js?1534968494.9772792&v=0.1.4'}
+- {type: js, url: '/local/lovelace/monster-card.js?1534970237.699337&v=0.2.3'}
+- {type: js, url: '/local/lovelace/tracker-card.js?1534970237.699337&v=0.1.4'}
+- {type: js, url: '/local/lovelace/column-card.js?1534970237.699337&v=0.0.1'}
 title: Defensie-eiland 35
 views:
 - cards:
   - cards:
-    - entities: [sun.sun, sensor.yr_symbol]
+    - entities: [sun.sun]
       type: glance
     - card: {type: glance}
       filter:
@@ -18,7 +19,7 @@ views:
         - {domain: persistent_notification}
       show_empty: false
       type: custom:monster-card
-    - card: {show_header_toggle: false, title: Kapot2, type: entities}
+    - card: {show_header_toggle: false, title: Kapot, type: entities}
       filter:
         exclude:
         - {entity_id: group.*}
@@ -49,9 +50,6 @@ views:
 - {id: upstairs, title: Boven}
 - cards:
   - cards:
-    - title: null
-      trackers: [sensor.custom_card_tracker]
-      type: custom:tracker-card
     - entities:
       - action_name: Run
         icon: mdi:refresh
@@ -61,6 +59,9 @@ views:
         type: call-service
       show_header_toggle: false
       type: entities
+    - title: null
+      trackers: [sensor.custom_card_tracker]
+      type: custom:tracker-card
     type: vertical-stack
   icon: mdi:television-guide
   id: lovelace
