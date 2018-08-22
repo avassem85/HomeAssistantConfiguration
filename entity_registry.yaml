@@ -363,3 +363,23 @@ sensor.pressure_kantoor:
   name: Kantoor - Luchtdruk
   platform: xiaomi_aqara
   unique_id: pressure158d0001f55ac3
+media_player.apple_tv_2:
+  config_entry_id:
+  name:
+  platform: apple_tv
+  unique_id: 4920550eadf58d0ff360390769bed779a2f8c97e5079dff4c7aeb32669890a37
+remote.apple_tv_2:
+  config_entry_id:
+  name:
+  platform: apple_tv
+  unique_id: 4920550eadf58d0ff360390769bed779a2f8c97e5079dff4c7aeb32669890a37
+sensor.iphone_alex_battery_state:
+  config_entry_id:
+  name:
+  platform: ios
+  unique_id: state_ios_iphone_alex
+sensor.iphone_alex_battery_level:
+  config_entry_id:
+  name:
+  platform: ios
+  unique_id: level_ios_iphone_alex

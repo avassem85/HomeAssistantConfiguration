@@ -1,0 +1,114 @@
+homeassistant:
+
+# xiaomi_aqara:
+#   gateways:
+#     - mac: !secret XIAOMI_MAC
+#       key: !secret XIAOMI_KEY
+
+group:
+  xiaomi_devices:
+    name: Xiaomi Devices
+    entities:
+      - group.xiaomi_gateway
+      - group.xiaomi_motion_sensor_kantoor
+      - group.xiaomi_motion_sensor_berging
+      - group.xiaomi_water_sensor_washok
+      - group.xiaomi_door_sensor_kantoor
+      - group.xiaomi_door_sensor_achterdeur
+      - group.xiaomi_door_sensor_washok
+      - group.xiaomi_button_1
+      - group.xiaomi_button_2
+      - group.xiaomi_temp_hum_sensor_kantoor
+      - group.xiaomi_temp_hum_sensor_washok
+      - group.xiaomi_temp_hum_sensor_wc_beneden
+      - group.xiaomi_temp_hum_sensor_wc_boven
+      - group.xiaomi_temp_hum_sensor_badkamer
+      - group.xiaomi_temp_hum_sensor_slaapkamer_aa
+      - group.xiaomi_temp_hum_sensor_slaapkamer_luuk
+      - group.xiaomi_temp_hum_sensor_slaapkamer_elise
+  xiaomi_gateway:
+    name: Xiaomi Devices - Gateway
+    entities:
+      - light.xiaomi_gateway
+      - sensor.illumination_gateway
+  xiaomi_motion_sensor_kantoor:
+    name: Xiaomi Devices - Motion Sensor - Kantoor
+    entities:
+      - binary_sensor.motion_sensor_kantoor
+      - sensor.illumination_motion_sensor_kantoor
+  xiaomi_motion_sensor_berging:
+    name: Xiaomi Devices - Motion Sensor - Berging
+    entities:
+      - binary_sensor.motion_sensor_berging
+      - sensor.illumination_motion_sensor_berging
+  xiaomi_water_sensor_washok:
+    name: Xiaomi Devices - Water Sensor - Washok
+    entities:
+      - binary_sensor.water_leak_sensor_washok
+  xiaomi_door_sensor_kantoor:
+    name: Xiaomi Devices - Door Sensor - Kantoor
+    entities:
+      - binary_sensor.door_window_sensor_kantoor
+  xiaomi_door_sensor_achterdeur:
+    name: Xiaomi Devices - Door Sensor - Achterdeur
+    entities:
+      - binary_sensor.door_window_sensor_achterdeur
+  xiaomi_door_sensor_washok:
+    name: Xiaomi Devices - Door Sensor - Washok
+    entities:
+      - binary_sensor.door_window_sensor_washok
+  xiaomi_button_1:
+    name: Xiaomi Devices - Button 1
+    entities:
+      - binary_sensor.switch_158d0001e010d8
+  xiaomi_button_2:
+    name: Xiaomi Devices - Button 2
+    entities:
+      - binary_sensor.switch_158d00021360b7
+  xiaomi_temp_hum_sensor_kantoor:
+    name: Xiaomi Devices - Temperature & Humidity Sensor - Kantoor
+    entities:
+      - sensor.temperature_kantoor
+      - sensor.humidity_kantoor
+      - sensor.pressure_kantoor
+  xiaomi_temp_hum_sensor_washok:
+    name: Xiaomi Devices - Temperature & Humidity Sensor - Washok
+    entities:
+      - sensor.temperature_washok
+      - sensor.humidity_washok
+  xiaomi_temp_hum_sensor_wc_beneden:
+    name: Xiaomi Devices - Temperature & Humidity Sensor - WC Beneden
+    entities:
+      - sensor.temperature_wc_beneden
+      - sensor.humidity_wc_beneden
+      - sensor.pressure_wc_beneden
+  xiaomi_temp_hum_sensor_wc_boven:
+    name: Xiaomi Devices - Temperature & Humidity Sensor - WC Boven
+    entities:
+      - sensor.temperature_wc_boven
+      - sensor.humidity_wc_boven
+      - sensor.pressure_wc_boven
+  xiaomi_temp_hum_sensor_badkamer:
+    name: Xiaomi Devices - Temperature & Humidity Sensor - Badkamer
+    entities:
+      - sensor.temperature_badkamer
+      - sensor.humidity_badkamer
+  xiaomi_temp_hum_sensor_slaapkamer_aa:
+    name: Xiaomi Devices - Temperature & Humidity Sensor - Slaapkamer Alex & Anita
+    entities:
+      - sensor.temperature_slaapkamer_aa
+      - sensor.humidity_slaapkamer_aa
+      - sensor.pressure_slaapkamer_aa
+  xiaomi_temp_hum_sensor_slaapkamer_luuk:
+    name: Xiaomi Devices - Temperature & Humidity Sensor - Slaapkamer Luuk
+    entities:
+      - sensor.temperature_slaapkamer_luuk
+      - sensor.humidity_slaapkamer_luuk
+  xiaomi_temp_hum_sensor_slaapkamer_elise:
+    name: Xiaomi Devices - Temperature & Humidity Sensor - Slaapkamer Elise
+    entities:
+      - sensor.temperature_slaapkamer_elise
+      - sensor.humidity_slaapkamer_elise
+      - sensor.pressure_slaapkamer_elise
+
+

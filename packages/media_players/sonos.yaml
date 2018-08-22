@@ -1,0 +1,120 @@
+homeassistant:
+
+# sonos:
+#   media_player:
+#     hosts: !secret SONOS_IP_ADDRESS
+
+group:
+  sonos_devices:
+    name: Sonos Devices
+    entities:
+      - group.hue_kinderkamer_elise
+
+script:
+  sonos_stereo_off:
+    alias: Turn off Stereo
+    sequence:
+      - alias: Stereo off
+        service: homeassistant.turn_off
+        data:
+          entity_id: light.onoff_plugin_unit_1
+
+  sonos_stereo_on:
+    alias: Turn on Stereo
+    sequence:
+      - alias: Stereo On
+        service: homeassistant.turn_on
+        data:
+          entity_id: light.onoff_plugin_unit_1
+
+  sonos_play_pause:
+    alias: Sonos Play Pause
+    sequence:
+      - service: media_player.media_play_pause
+        data_template:
+          entity_id: "{{ 'media_player.' ~ where }}"
+
+  sonos_pause_all:
+    alias: Pause all players
+    sequence:
+      - service: script.sonos_play_pause
+        data_template:
+          where: 'living_room'
+
+  sonos_guest_mode:
+    alias: Sonos guest mode
+    sequence:
+      - service: shell_command.sonos_leave_main_group
+        data_template:
+          where: 'Badrum'
+
+      - service: media_player.volume_set
+        data:
+          entity_id: media_player.bathroom
+          volume_level: 0.20
+
+      - service: shell_command.sonos_favorites_aninstrumentalsunday_badrum
+      - service: shell_command.sonos_favorites_dinnerromance_vardagsrum
+
+  sonos_group_players:
+    alias: Sonos group players
+    sequence:
+      - service: media_player.sonos_join
+        data:
+          master: media_player.vardagsrum_musik
+        entity_id:
+          - media_player.badrum
+
+  media_player_select_source_play:
+    alias: Media Player Select Source
+    sequence:
+      - service: media_player.select_source
+        data_template:
+          entity_id: "{{ 'media_player.' ~ where }}"
+          source: "{{ select_source }}"
+      - service: media_player.media_play
+        data_template:
+          entity_id: "{{ 'media_player.' ~ where }}"
+
+  media_player_set_volume:
+    alias: Media Player Set Volume
+    sequence:
+      - service: media_player.volume_set
+        data_template:
+          entity_id: "{{ 'media_player.' ~ where }}"
+          volume_level: "{{ volume_level }}"
+
+# https://community.home-assistant.io/t/sonos-tts-script/8896/62
+  sonos_tts:
+    alias: Sonos Text To Speech
+    sequence:
+      - service: media_player.sonos_snapshot
+        data_template:
+          entity_id: "{{ 'media_player.' ~ where }}"
+          with_group: yes
+      - service: media_player.sonos_unjoin
+        data_template:
+          entity_id: "{{ 'media_player.' ~ where }}"
+      - service: media_player.volume_set
+        data_template:
+          entity_id: "{{ 'media_player.' ~ where }}"
+          volume_level: 0.40
+      - service: tts.google_say
+        data_template:
+          entity_id: "{{ 'media_player.' ~ where }}"
+          message: "{{ what }}"
+
+      - wait_template: >-
+          {{ is_state('media_player.' ~ where , 'playing') }}
+        timeout: '00:00:5'
+
+      - wait_template: >-
+          {{ not is_state('media_player.' ~ where , 'playing') }}
+        timeout: '00:00:05'
+
+      - service: media_player.sonos_restore
+        data_template:
+          entity_id: "{{ 'media_player.' ~ where }}"
+          with_group: yes
+
+      - service: script.sonos_group_players

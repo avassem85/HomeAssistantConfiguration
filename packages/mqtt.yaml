@@ -1,0 +1,6 @@
+mqtt:
+  broker: core-mosquitto
+  username: !secret MQTT_USERNAME
+  password: !secret MQTT_PASSWORD
+  discovery: true
+  client_id: home-assistant-alex
