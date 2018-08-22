@@ -1,0 +1,4 @@
+custom_updater:
+  hide_sensor: true
+  track: cards
+  show_installable: true
