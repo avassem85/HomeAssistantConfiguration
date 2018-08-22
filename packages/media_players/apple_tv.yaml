@@ -2,3 +2,4 @@ apple_tv:
   - host: !secret APPLETV_HOST
     login_id: !secret APPLETV_LOGIN_ID
     name: "Apple TV"
+    start_off: true
