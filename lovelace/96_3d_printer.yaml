@@ -6,6 +6,9 @@ cards:
     title: Snapmaker
     entities:
       - sensor.snapmaker_target_tool0_temp
+      - sensor.snapmaker_actual_bed_temp
       - sensor.snapmaker_job_percentage
       - sensor.snapmaker_current_state
+      - sensor.temp_sensor_snapmaker_temperature
+      - sensor.temp_sensor_snapmaker_humidity
     camera_image: camera.snapmaker
