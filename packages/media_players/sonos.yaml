@@ -1,4 +1,9 @@
 homeassistant:
+  customize_glob:
+    media_player.sonos_woonkamer:
+      friendly_name: Woonkamer - Sonos Soundbar
+    script.sonos_tts:
+      hidden: true
 
 # sonos:
 #   media_player:
