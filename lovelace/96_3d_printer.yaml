@@ -1,0 +1,11 @@
+title: 3D Printer
+id: snapmaker
+icon: mdi:printer-3d
+cards:
+  - type: picture-glance
+    title: Snapmaker
+    entities:
+      - sensor.snapmaker_target_tool0_temp
+      - sensor.snapmaker_job_percentage
+      - sensor.snapmaker_current_state
+    camera_image: camera.snapmaker

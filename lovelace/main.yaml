@@ -1,11 +1,23 @@
 title: Defensie-eiland 35
 
 resources:
-  - url: !resource monster-card/monster-card.js?v=0.2.3
+  - url: /local/lovelace/monster-card/monster-card.js?v=0.2.3
     type: js
-  - url: !resource tracker-card/tracker-card.js?v=0.1.4
+  - url: /local/lovelace/tracker-card/tracker-card.js?v=0.1.5
     type: js
-  - url: !resource column-card/column-card.js?v=0.0.1
+  - url: /local/lovelace/column-card/column-card.js?v=e7fb09
+    type: js
+  - url: /local/lovelace/mini-graph-card/mini-graph-card.js?v=0.0.6
+    type: module
+  - url: /local/lovelace/thermostat-card/thermostat-card.js?v=0.1.1
+    type: module
+  - url: /local/lovelace/surveillance-card/surveillance-card.js?v=0.0.1
+    type: module
+  - url: /local/lovelace/slideshow-card/slideshow-card.js?v=0.0.5
+    type: js
+  - url: /local/lovelace/graph-card/graph-card.js?v=1.0.1
+    type: js
+  - url: /local/lovelace/swipe-card/swipe-card.js?v=1.0.3
     type: js
 
 views:
@@ -13,4 +25,6 @@ views:
   - !include 02_downstairs.yaml
   - !include 03_living_room.yaml
   - !include 04_upstairs.yaml
+  - !include 97_cameras.yaml
+  - !include 96_3d_printer.yaml
   - !include 98_lovelace_ui.yaml

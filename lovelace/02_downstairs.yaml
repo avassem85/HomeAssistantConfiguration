@@ -1,2 +1,55 @@
 title: Beneden
 id: downstairs
+cards:
+  - type: picture-glance
+    title: Kantoor
+    entities:
+      - light.kantoor
+      - binary_sensor.door_sensor_kantoor
+      - binary_sensor.motion_sensor_kantoor_occupancy
+      - sensor.motion_sensor_kantoor_illuminance
+      - sensor.temp_sensor_kantoor_temperature
+      - sensor.temp_sensor_kantoor_humidity
+    image: /local/bed.png
+  - type: picture-glance
+    title: Garderobe
+    entities:
+      - light.garderobe
+    image: /local/bed.png
+  - type: picture-glance
+    title: Gang beneden
+    entities:
+      - light.gang_beneden
+    image: /local/bed.png
+  - type: picture-glance
+    title: Washok
+    entities:
+      - light.washok
+      - binary_sensor.door_sensor_washok
+      - binary_sensor.water_sensor_washok
+      - sensor.temp_sensor_washok_temperature
+      - sensor.temp_sensor_washok_humidity
+    image: /local/bed.png
+  - type: picture-glance
+    title: WC Beneden
+    entities:
+      - light.wc_beneden
+      - sensor.temp_sensor_wc_beneden_temperature
+      - sensor.temp_sensor_wc_beneden_humidity
+    image: /local/bed.png
+  - type: picture-glance
+    title: Trapkast
+    entities:
+      - light.trapkast
+      - binary_sensor.motion_sensor_trapkast_occupancy
+      - sensor.motion_sensor_trapkast_illuminance
+    image: /local/bed.png
+  - type: picture-glance
+    title: Berging
+    entities:
+      - light.berging
+      - binary_sensor.motion_sensor_berging_occupancy
+      - sensor.motion_sensor_berging_illuminance
+      - sensor.temp_sensor_berging_temperature
+      - sensor.temp_sensor_berging_humidity
+    image: /local/bed.png

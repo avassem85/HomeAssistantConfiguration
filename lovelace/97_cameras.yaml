@@ -1,0 +1,12 @@
+title: Cameras
+id: cameras
+panel: true
+cards:
+  - type: custom:surveillance-card
+    thumb_interval: 15
+    update_interval: 2
+    cameras:
+      - entity: camera.slaapkamer_elise
+        motion_entity: binary_sensor.slaapkamer_camera_elise_motion_detected
+      - entity: camera.slaapkamer_luuk
+        motion_entity: binary_sensor.slaapkamer_camera_luuk_motion_detected

@@ -1,2 +1,49 @@
 title: Boven
 id: upstairs
+cards:
+  - type: picture-glance
+    title: Slaapkamer Elise
+    entities:
+      - light.kinderkamer
+      - binary_sensor.slaapkamer_camera_elise_motion_detected
+      - binary_sensor.door_sensor_elise
+      - sensor.temp_sensor_elise_temperature
+      - sensor.temp_sensor_elise_humidity
+    camera_image: camera.slaapkamer_elise
+  - type: picture-glance
+    title: Slaapkamer Luuk
+    entities:
+      - light.babykamer
+      - binary_sensor.slaapkamer_camera_luuk_motion_detected
+      - binary_sensor.door_sensor_luuk
+      - sensor.temp_sensor_luuk_temperature
+      - sensor.temp_sensor_luuk_humidity
+    camera_image: camera.slaapkamer_luuk
+  - type: picture-glance
+    title: Slaapkamer Alex & Anita
+    entities:
+      - light.slaapkamer
+      - sensor.temp_sensor_slaapkamer_aa_temperature
+      - sensor.temp_sensor_slaapkamer_aa_humidity
+    image: /local/bed.png
+  - type: picture-glance
+    title: WC Boven
+    entities:
+      - light.slaapkamer
+      - sensor.temp_sensor_wc_boven_temperature
+      - sensor.temp_sensor_wc_boven_humidity
+    image: /local/bed.png
+  - type: picture-glance
+    title: Badkamer
+    entities:
+      - light.badkamer
+      - sensor.temp_sensor_badkamer_temperature
+      - sensor.temp_sensor_badkamer_humidity
+    image: /local/bed.png
+  - type: picture-glance
+    title: Gang boven
+    entities:
+      - light.gang_boven
+      - sensor.temp_sensor_gang_boven_temperature
+      - sensor.temp_sensor_gang_boven_humidity
+    image: /local/bed.png

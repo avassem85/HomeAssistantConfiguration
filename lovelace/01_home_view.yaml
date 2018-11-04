@@ -29,7 +29,7 @@ cards:
             - state: "unavailable"
           exclude:
             - entity_id: group.*
-
+            
       - type: horizontal-stack
         cards:
 
@@ -45,6 +45,7 @@ cards:
             card:
               type: history-graph
               title: Temperatuur
+              hours_to_show: 8
             filter:
               include:
                 - entity_id: "sensor.*temperature*"
