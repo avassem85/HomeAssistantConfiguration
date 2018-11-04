@@ -1,0 +1,24 @@
+homeassistant:
+  customize_glob:
+    light.ambilight:
+      friendly_name: Woonkamer - Ambilight
+
+light:
+  - platform: hyperion
+    host: !secret HYPERION_IP_ADDRESS
+    name: Ambilight
+
+automation:
+- id: hyperion_ambilight_on
+  alias: Turn ambilight effect on when light goes on
+  hide_entity: True
+  initial_state: True
+  trigger:
+    - platform: state
+      entity_id: light.ambilight
+      to: 'on'
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.ambilight
+        effect: "HDMI"
