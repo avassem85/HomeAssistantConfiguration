@@ -1,0 +1,31 @@
+homeassistant:
+  customize_glob:
+    sensor.internetgatewaydevicev2__fritzbox_7490_bytes_received:
+      friendly_name: Internet - Bytes received
+    sensor.internetgatewaydevicev2__fritzbox_7490_bytes_sent:
+      friendly_name: Internet - Bytes sent
+    sensor.internetgatewaydevicev2__fritzbox_7490_kbytesec_received:
+      friendly_name: Internet - kbyte/sec received
+    sensor.internetgatewaydevicev2__fritzbox_7490_kbytesec_sent:
+      friendly_name: Internet - kbyte/sec sent
+    sensor.internetgatewaydevicev2__fritzbox_7490_packets_received:
+      friendly_name: Internet - Packets received
+    sensor.internetgatewaydevicev2__fritzbox_7490_packets_sent:
+      friendly_name: Internet - Packets received
+    sensor.internetgatewaydevicev2__fritzbox_7490_packetssec_received:
+      friendly_name: Internet - Packets/sec received
+    sensor.internetgatewaydevicev2__fritzbox_7490_packetssec_sent:
+      friendly_name: Internet - Packets/sec received
+
+group:
+  fritbox_internetgateway:
+    name: Fritzbox Internet Gateway
+    entities:
+      - sensor.internetgatewaydevicev2__fritzbox_7490_bytes_received
+      - sensor.internetgatewaydevicev2__fritzbox_7490_bytes_sent
+      - sensor.internetgatewaydevicev2__fritzbox_7490_kbytesec_received
+      - sensor.internetgatewaydevicev2__fritzbox_7490_kbytesec_sent
+      - sensor.internetgatewaydevicev2__fritzbox_7490_packets_received
+      - sensor.internetgatewaydevicev2__fritzbox_7490_packets_sent
+      - sensor.internetgatewaydevicev2__fritzbox_7490_packetssec_received
+      - sensor.internetgatewaydevicev2__fritzbox_7490_packetssec_sent
