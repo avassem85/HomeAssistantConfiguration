@@ -1,0 +1,87 @@
+homeassistant:
+  customize_glob:
+    light.berging:
+      friendly_name: "Berging - Verlichting"
+    light.lamp_berging_1:
+      friendly_name: "Berging - Lamp #1"
+    light.lamp_berging_2:
+      friendly_name: "Berging - Lamp #2"
+    light.lamp_berging_3:
+      friendly_name: "Berging - Lamp #3"
+    light.garderobe:
+      friendly_name: "Garderobe - Verlichting"
+    light.lamp_garderobe_1:
+      friendly_name: "Garderobe - Lamp #1"
+    light.lamp_garderobe_2:
+      friendly_name: "Garderobe - Lamp #2"
+    light.lamp_garderobe_3:
+      friendly_name: "Garderobe - Lamp #3"
+    light.kantoor:
+      friendly_name: "Kantoor - Verlichting"
+    light.lamp_kantoor_1:
+      friendly_name: "Kantoor - Lamp #1"
+    light.lamp_kantoor_2:
+      friendly_name: "Kantoor - Lamp #2"
+    light.lamp_kantoor_3:
+      friendly_name: "Kantoor - Lamp #3"
+    light.lamp_wc_beneden:
+      friendly_name: "WC Beneden - Verlichting"
+
+light:
+  - platform: group
+    name: Berging
+    entities:
+      - light.lamp_berging_1
+      - light.lamp_berging_2
+      - light.lamp_berging_3
+  - platform: group
+    name: Kantoor 
+    entities:
+      - light.lamp_kantoor_1
+      - light.lamp_kantoor_2
+      - light.lamp_kantoor_3
+  - platform: group
+    name: Garderobe 
+    entities:
+      - light.lamp_garderobe_1
+      - light.lamp_garderobe_2
+      - light.lamp_garderobe_3
+  - platform: group
+    name: WC Beneden 
+    entities:
+      - light.lamp_wc_beneden
+
+switch:
+  - platform: flux
+    lights:
+      - light.lamp_kantoor_1
+      - light.lamp_kantoor_2
+      - light.lamp_kantoor_3
+
+group:
+  tradfri_berging:
+    name: Trådfri Devices - Berging
+    entities:
+      - light.berging
+      - light.lamp_berging_1
+      - light.lamp_berging_2
+      - light.lamp_berging_3
+  tradfri_garderobe:
+    name: Trådfri Devices - Garderobe
+    entities:
+      - light.garderobe
+      - light.lamp_garderobe_1
+      - light.lamp_garderobe_2
+      - light.lamp_garderobe_3
+  tradfri_kantoor:
+    name: Trådfri Devices - Kantoor
+    entities:
+      - light.kantoor
+      - light.lamp_kantoor_1
+      - light.lamp_kantoor_2
+      - light.lamp_kantoor_3
+  tradfri_wc_beneden:
+    name: Trådfri Devices - Wc beneden
+    entities:
+      - light.wc_beneden
+      - light.lamp_wc_beneden

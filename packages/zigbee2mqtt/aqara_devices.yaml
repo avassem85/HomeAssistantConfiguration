@@ -1,0 +1,241 @@
+homeassistant:
+  customize_glob:
+    sensor.button_kantoor_1:
+      friendly_name: "Kantoor - Button 1"
+    sensor.button_kantoor_2:
+      friendly_name: "Kantoor - Button 2"
+    binary_sensor.motion_sensor_kantoor_occupancy:
+      friendly_name: "Kantoor - Beweging"
+    sensor.motion_sensor_kantoor_illuminance:
+      friendly_name: "Kantoor - Licht"
+    binary_sensor.motion_sensor_berging_occupancy:
+      friendly_name: "Berging - Beweging"
+    sensor.motion_sensor_berging_illuminance:
+      friendly_name: "Berging - Licht"
+    binary_sensor.motion_sensor_washok_occupancy:
+      friendly_name: "Washok - Beweging"
+    sensor.motion_sensor_washok_illuminance:
+      friendly_name: "Washok - Licht"
+    binary_sensor.motion_sensor_trapkast_occupancy:
+      friendly_name: "Trapkast - Beweging"
+    sensor.motion_sensor_trapkast_illuminance:
+      friendly_name: "Trapkast - Licht"
+    sensor.temp_sensor_berging_temperature:
+      friendly_name: "Berging - Temperatuur"
+    sensor.temp_sensor_berging_humidity:
+      friendly_name: "Berging - Luchtvochtigheid"
+    sensor.temp_sensor_berging_pressure:
+      friendly_name: "Berging - Luchtdruk"
+    sensor.temp_sensor_wc_boven_temperature:
+      friendly_name: "WC Boven - Temperatuur"
+    sensor.temp_sensor_wc_boven_humidity:
+      friendly_name: "WC Boven - Luchtvochtigheid"
+    sensor.temp_sensor_wc_boven_pressure:
+      friendly_name: "WC Boven - Luchtdruk"
+    sensor.temp_sensor_wc_beneden_temperature:
+      friendly_name: "WC Beneden - Temperatuur"
+    sensor.temp_sensor_wc_beneden_humidity:
+      friendly_name: "WC Beneden - Luchtvochtigheid"
+    sensor.temp_sensor_wc_beneden_pressure:
+      friendly_name: "WC Beneden - Luchtdruk"
+    sensor.temp_sensor_badkamer_temperature:
+      friendly_name: "Badkamer - Temperatuur"
+    sensor.temp_sensor_badkamer_humidity:
+      friendly_name: "Badkamer - Luchtvochtigheid"
+    sensor.temp_sensor_badkamer_pressure:
+      friendly_name: "Badkamer - Luchtdruk"
+    sensor.temp_sensor_slaapkamer_aa_temperature:
+      friendly_name: "Slaapkamer AA - Temperatuur"
+    sensor.temp_sensor_slaapkamer_aa_humidity:
+      friendly_name: "Slaapkamer AA - Luchtvochtigheid"
+    sensor.temp_sensor_slaapkamer_aa_pressure:
+      friendly_name: "Slaapkamer AA - Luchtdruk"
+    sensor.temp_sensor_elise_temperature:
+      friendly_name: "Slaapkamer Elise - Temperatuur"
+    sensor.temp_sensor_elise_humidity:
+      friendly_name: "Slaapkamer Elise - Luchtvochtigheid"
+    sensor.temp_sensor_elise_pressure:
+      friendly_name: "Slaapkamer Elise - Luchtdruk"
+    sensor.temp_sensor_luuk_temperature:
+      friendly_name: "Slaapkamer Luuk - Temperatuur"
+    sensor.temp_sensor_luuk_humidity:
+      friendly_name: "Slaapkamer Luuk - Luchtvochtigheid"
+    sensor.temp_sensor_luuk_pressure:
+      friendly_name: "Slaapkamer Luuk - Luchtdruk"
+    sensor.temp_sensor_woonkamer_temperature:
+      friendly_name: "Woonkamer - Temperatuur"
+    sensor.temp_sensor_woonkamer_humidity:
+      friendly_name: "Woonkamer - Luchtvochtigheid"
+    sensor.temp_sensor_woonkamer_pressure:
+      friendly_name: "Woonkamer - Luchtdruk"
+    sensor.temp_sensor_kantoor_temperature:
+      friendly_name: "Kantoor - Temperatuur"
+    sensor.temp_sensor_kantoor_humidity:
+      friendly_name: "Kantoor - Luchtvochtigheid"
+    sensor.temp_sensor_kantoor_pressure:
+      friendly_name: "Kantoor - Luchtdruk"
+    sensor.temp_sensor_snapmaker_temperature:
+      friendly_name: "Snapmaker - Case Temperatuur"
+    sensor.temp_sensor_snapmaker_humidity:
+      friendly_name: "Snapmaker - Case Luchtvochtigheid"
+    sensor.temp_sensor_washok_temperature:
+      friendly_name: "Washok - Temperatuur"
+    sensor.temp_sensor_washok_humidity:
+      friendly_name: "Washok - Luchtvochtigheid"
+    sensor.temp_sensor_gang_boven_temperature:
+      friendly_name: "Gang boven - Temperatuur"
+    sensor.temp_sensor_gang_boven_humidity:
+      friendly_name: "Gang boven - Luchtvochtigheid"
+    binary_sensor.door_sensor_kantoor:
+      friendly_name: "Kantoor - Deur"
+    binary_sensor.door_sensor_luuk:
+      friendly_name: "Kamer Luuk - Deur"
+    binary_sensor.door_sensor_elise:
+      friendly_name: "Kamer Elise - Deur"
+    binary_sensor.door_sensor_washok:
+      friendly_name: "Washok - Deur"
+    binary_sensor.door_sensor_achterdeur:
+      friendly_name: "Achterdeur - Deur"
+    binary_sensor.water_sensor_washok:
+      friendly_name: "Washok - Water"
+    sensor.qube_woonkamer:
+      friendly_name: "Woonkamer - Qube"
+    sensor.qube_slaapkamer:
+      friendly_name: "Slaapkamer - Qube"
+    sensor.vibration_sensor_kantoor:
+      friendly_name: "Kantoor - Trillingen"
+
+group:
+  xiaomi_button_kantoor_1:
+    name: Button 1
+    entities:
+      - sensor.button_kantoor_1
+  xiaomi_button_kantoor_2:
+    name: Button 2
+    entities:
+      - sensor.button_kantoor_2
+  xiaomi_motion_sensor_kantoor:
+    name: Motion Sensor - Kantoor
+    entities:
+      - binary_sensor.motion_sensor_kantoor_occupancy
+      - sensor.motion_sensor_kantoor_illuminance
+  xiaomi_motion_sensor_berging:
+    name: Motion Sensor - Berging
+    entities:
+      - binary_sensor.motion_sensor_berging_occupancy
+      - sensor.motion_sensor_berging_illuminance
+  xiaomi_motion_sensor_washok:
+    name: Motion Sensor - Washok
+    entities:
+      - binary_sensor.motion_sensor_washok_occupancy
+      - sensor.motion_sensor_washok_illuminance
+  xiaomi_motion_sensor_trapkast:
+    name: Motion Sensor - Trapkast
+    entities:
+      - binary_sensor.motion_sensor_trapkast_occupancy
+      - sensor.motion_sensor_trapkast_illuminance
+  xiaomi_temp_sensor_berging:
+    name: Temperature & Humidity Sensor - Berging
+    entities:
+      - sensor.temp_sensor_berging_temperature
+      - sensor.temp_sensor_berging_humidity
+      - sensor.temp_sensor_berging_pressure
+  xiaomi_temp_sensor_wc_boven:
+    name: Temperature & Humidity Sensor - WC Boven
+    entities:
+      - sensor.temp_sensor_wc_boven_temperature
+      - sensor.temp_sensor_wc_boven_humidity
+      - sensor.temp_sensor_wc_boven_pressure
+  xiaomi_temp_sensor_wc_beneden:
+    name: Temperature & Humidity Sensor - WC Beneden
+    entities:
+      - sensor.temp_sensor_wc_beneden_temperature
+      - sensor.temp_sensor_wc_beneden_humidity
+      - sensor.temp_sensor_wc_beneden_pressure
+  xiaomi_temp_sensor_badkamer:
+    name: Temperature & Humidity Sensor - Badkamer
+    entities:
+      - sensor.temp_sensor_badkamer_temperature
+      - sensor.temp_sensor_badkamer_humidity
+      - sensor.temp_sensor_badkamer_pressure
+  xiaomi_temp_sensor_slaapkamer_aa:
+    name: Temperature & Humidity Sensor - Slaapkamer Alex & Anita
+    entities:
+      - sensor.temp_sensor_slaapkamer_aa_temperature
+      - sensor.temp_sensor_slaapkamer_aa_humidity
+      - sensor.temp_sensor_slaapkamer_aa_pressure
+  xiaomi_temp_sensor_slaapkamer_elise:
+    name: Temperature & Humidity Sensor - Slaapkamer Elise
+    entities:
+      - sensor.temp_sensor_elise_temperature
+      - sensor.temp_sensor_elise_humidity
+      - sensor.temp_sensor_elise_pressure
+  xiaomi_temp_sensor_slaapkamer_luuk:
+    name: Temperature & Humidity Sensor - Slaapkamer Luuk
+    entities:
+      - sensor.temp_sensor_luuk_temperature
+      - sensor.temp_sensor_luuk_humidity
+      - sensor.temp_sensor_luuk_pressure
+  xiaomi_temp_sensor_woonkamer:
+    name: Temperature & Humidity Sensor - Woonkamer
+    entities:
+      - sensor.temp_sensor_woonkamer_temperature
+      - sensor.temp_sensor_woonkamer_humidity
+      - sensor.temp_sensor_woonkamer_pressure
+  xiaomi_temp_sensor_kantoor:
+    name: Temperature & Humidity Sensor - Kantoor
+    entities:
+      - sensor.temp_sensor_kantoor_temperature
+      - sensor.temp_sensor_kantoor_humidity
+      - sensor.temp_sensor_kantoor_pressure
+  xiaomi_temp_sensor_snapmaker:
+    name: Temperature & Humidity Sensor - Snapmaker
+    entities:
+      - sensor.temp_sensor_snapmaker_temperature
+      - sensor.temp_sensor_snapmaker_humidity
+  xiaomi_temp_sensor_washok:
+    name: Temperature & Humidity Sensor - Washok
+    entities:
+      - sensor.temp_sensor_washok_temperature
+      - sensor.temp_sensor_washok_humidity
+  xiaomi_temp_sensor_gang_boven:
+    name: Temperature & Humidity Sensor - Gang Boven
+    entities:
+      - sensor.temp_sensor_gang_boven_temperature
+      - sensor.temp_sensor_gang_boven_humidity
+  xiaomi_door_sensor_kantoor:
+    name: Door Sensor - Kantoor
+    entities:
+      - binary_sensor.door_sensor_kantoor
+  xiaomi_door_sensor_slaapkamer_luuk:
+    name: Door Sensor - Slaapkamer Luuk
+    entities:
+      - binary_sensor.door_sensor_luuk
+  xiaomi_door_sensor_slaapkamer_elise:
+    name: Door Sensor - Slaapkamer Elise
+    entities:
+      - binary_sensor.door_sensor_elise
+  xiaomi_door_sensor_washok:
+    name: Door Sensor - Washok
+    entities:
+      - binary_sensor.door_sensor_washok
+  xiaomi_door_sensor_achterdeur:
+    name: Door Sensor - Achterdeur
+    entities:
+      - binary_sensor.door_sensor_achterdeur
+  xiaomi_water_sensor_washok:
+    name: Water Sensor - Washok
+    entities:
+      - binary_sensor.water_sensor_washok
+  xiaomi_qube_woonkamer:
+    name: Xiaomi Devices - Qube - Woonkamer
+    entities:
+      - sensor.qube_woonkamer
+  xiaomi_qube_slaapkamer:
+    name: Xiaomi Devices - Qube - Slaapkamer
+    entities:
+      - sensor.qube_slaapkamer
+  xiaomi_vibration_kantoor:
+    name: Xiaomi Devices - Vibration - Kantoor
+    entities:
+      - sensor.vibration_sensor_kantoor

@@ -1,0 +1,75 @@
+homeassistant:
+  customize_glob:
+    light.trapkast:
+      friendly_name: "Trapkast - Verlichting"
+    light.lamp_trapkast:
+      friendly_name: "Trapkast - Lamp #1"
+    light.gang_boven:
+      friendly_name: "Gang boven - Verlichting"
+    light.lamp_gang_boven:
+      friendly_name: "Gang boven - Lamp #1"
+    light.gang_beneden:
+      friendly_name: "Gang beneden - Verlichting"
+    light.lamp_gang_beneden:
+      friendly_name: "Gang beneden - Lamp #1"
+    light.washok:
+      friendly_name: "Washok - Verlichting"
+    light.lamp_washok:
+      friendly_name: "Washok - Lamp #1"
+    light.eetkamer:
+      friendly_name: "Eetkamer - Verlichting"
+    light.lamp_eetkamer_1:
+      friendly_name: "Eetkamer - Lamp #1"
+    light.lamp_eetkamer_2:
+      friendly_name: "Eetkamer - Lamp #2"
+
+group:
+  hue_trapkast:
+    name: Hue Devices - Trapkast
+    entities:
+      - light.trapkast
+      - light.lamp_trapkast
+  hue_gang_boven:
+    name: Hue Devices - Gang boven
+    entities:
+      - light.gang_boven
+      - light.lamp_gang_boven
+  hue_gang_beneden:
+    name: Hue Devices - Gang beneden
+    entities:
+      - light.gang_beneden
+      - light.lamp_gang_beneden
+  hue_washok:
+    name: Hue Devices - Washok
+    entities:
+      - light.washok
+      - light.lamp_washok
+  hue_eetkamer:
+    name: Hue Devices - Eetkamer
+    entities:
+      - light.eetkamer
+      - light.lamp_eetkamer_1
+      - light.lamp_eetkamer_2
+
+light:
+  - platform: group
+    name: Trapkast 
+    entities:
+      - light.lamp_trapkast
+  - platform: group
+    name: Gang boven 
+    entities:
+      - light.lamp_gang_boven
+  - platform: group
+    name: Gang beneden 
+    entities:
+      - light.lamp_gang_beneden
+  - platform: group
+    name: Washok 
+    entities:
+      - light.lamp_washok
+  - platform: group
+    name: Eetkamer 
+    entities:
+      - light.lamp_eetkamer_1
+      - light.lamp_eetkamer_2

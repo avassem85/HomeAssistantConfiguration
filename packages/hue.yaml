@@ -11,12 +11,8 @@ group:
       - group.hue_kinderkamer_elise
       - group.hue_babykamer_luuk
       - group.hue_slaapkamer
-      - group.hue_gang_boven
-      - group.hue_gang_beneden
-      - group.hue_washok
       - group.hue_badkamer
       - group.hue_woonkamer
-      - group.hue_eetkamer
   hue_kinderkamer_elise:
     name: Hue Devices - Kamer Elise
     entities:
@@ -38,21 +34,6 @@ group:
       - light.slaapkamer_1
       - light.slaapkamer_2
       - light.slaapkamer_3
-  hue_gang_boven:
-    name: Hue Devices - Gang boven
-    entities:
-      - light.gang_boven
-      - light.gang_boven_1
-  hue_gang_beneden:
-    name: Hue Devices - Gang beneden
-    entities:
-      - light.gang_beneden
-      - light.gang_beneden_1
-  hue_washok:
-    name: Hue Devices - Washok
-    entities:
-      - light.washok
-      - light.washok_1
   hue_badkamer:
     name: Hue Devices - Badkamer
     entities:
@@ -65,9 +46,3 @@ group:
       - light.woonkamer_1
       - light.woonkamer_2
       - light.woonkamer_3
-  hue_eetkamer:
-    name: Hue Devices - Eetkamer
-    entities:
-      - light.eetkamer
-      - light.eetkamer_1
-      - light.eetkamer_2
