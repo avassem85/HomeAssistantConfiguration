@@ -1,1 +1,8 @@
-[]
+- id: '1535050343587'
+  alias: Dummy
+  trigger:
+  - event: start
+    platform: homeassistant
+  condition: []
+  action:
+  - delay: '1'
