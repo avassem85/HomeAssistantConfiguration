@@ -1,0 +1,46 @@
+homeassistant:
+  customize_glob:
+    sensor.cpu_temp:
+      friendly_name: Raspberry PI - CPU Temperatuur
+    sensor.disk_use_percent_:
+      friendly_name: Raspberry PI - Schijfruimmte gebruik
+    sensor.memory_use_percent:
+      friendly_name: Raspberry PI - Geheugen gebruik
+    sensor.processor_use:
+      friendly_name: Raspberry PI - Processor gebruik
+    sensor.last_boot:
+      friendly_name: Raspberry PI - Laatste opstart
+    sensor.since_last_boot:
+      friendly_name: Raspberry PI - Tijd sinds laatste opstart
+    sensor.rpi_power_status:
+      friendly_name: Raspberry PI - Power status
+
+group:
+  raspberry_pi_system_monitor:
+    name: Raspberry PI 3B+
+    entities:
+      - sensor.cpu_temp
+      - sensor.disk_use_percent_
+      - sensor.memory_use_percent
+      - sensor.processor_use
+      - sensor.rpi_power_status
+      - sensor.last_boot
+      - sensor.since_last_boot
+
+sensor:
+  - platform: command_line
+    name: CPU Temp
+    command: "cat /sys/class/thermal/thermal_zone0/temp"
+    unit_of_measurement: "°C"
+    value_template: '{{ value | multiply(0.001) | round(1) }}'
+
+  - platform: systemmonitor
+    resources:
+      - type: disk_use_percent
+        arg: /
+      - type: memory_use_percent
+      - type: processor_use
+      - type: last_boot
+      - type: since_last_boot
+
+  - platform: rpi_power

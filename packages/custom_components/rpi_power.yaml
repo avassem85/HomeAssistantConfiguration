@@ -1,2 +1,0 @@
-sensor:
-  platform: rpi_power
