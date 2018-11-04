@@ -1,0 +1,55 @@
+homeassistant:
+  customize_glob:
+    binary_sensor.snapmaker_printing:
+      friendly_name: "Snapmaker - Online"
+    binary_sensor.snapmaker_printing_error:
+      friendly_name: "Snapmaker - Error"
+    camera.snapmaker:
+      friendly_name: "Snapmaker - Camera"
+    sensor.snapmaker_actual_tool0_temp:
+      friendly_name: "Snapmaker - Tool Temperatuur"
+    sensor.snapmaker_target_tool0_temp:
+      friendly_name: "Snapmaker - Tool Temperatuur Doel"
+    sensor.snapmaker_actual_bed_temp:
+      friendly_name: "Snapmaker - Bed Temperatuur"
+    sensor.snapmaker_target_bed_temp:
+      friendly_name: "Snapmaker - Bed Temperatuur Doel"      
+    sensor.snapmaker_current_state:
+      friendly_name: "Snapmaker - Status"
+    sensor.snapmaker_job_percentage:
+      friendly_name: "Snapmaker - Print %"
+    sensor.snapmaker_time_elapsed:
+      friendly_name: "Snapmaker - Tijd verstreken"
+    sensor.snapmaker_time_remaining:
+      friendly_name: "Snapmaker - Tijd resterend"
+
+group:
+  snapmaker:
+    name: Snapmaker
+    entities:
+      - binary_sensor.snapmaker_printing
+      - binary_sensor.snapmaker_printing_error
+      - camera.snapmaker
+      - sensor.snapmaker_actual_tool0_temp
+      - sensor.snapmaker_target_tool0_temp
+      - sensor.snapmaker_actual_bed_temp
+      - sensor.snapmaker_target_bed_temp
+      - sensor.snapmaker_current_state
+      - sensor.snapmaker_job_percentage
+      - sensor.snapmaker_time_elapsed
+      - sensor.snapmaker_time_remaining
+      - sensor.temp_sensor_snapmaker_temperature
+      - sensor.temp_sensor_snapmaker_humidity
+
+camera:
+  - platform: mjpeg
+    name: Snapmaker
+    still_image_url: !secret OCTOPRINT_STILL_IMG_URL
+    mjpeg_url: !secret OCTOPRINT_MJPEG_URL
+
+octoprint:
+  - host: !secret OCTOPRINT_HOST
+    api_key: !secret OCTOPRINT_API_KEY
+    name: Snapmaker
+    bed: true
+    number_of_tools: 1
