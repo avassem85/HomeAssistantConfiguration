@@ -2,3 +2,6 @@ custom_updater:
   hide_sensor: true
   track: cards
   show_installable: true
+  card_urls:
+    - https://raw.githubusercontent.com/kalkih/mini-graph-card/master/tracker.json
+    - https://raw.githubusercontent.com/bramkragten/custom-ui/master/updater.json

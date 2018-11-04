@@ -2,12 +2,12 @@ homeassistant:
   customize_glob:
     binary_sensor.*_online:
       hidden: true
-    binary_sensor.*_activity:
+    binary_sensor.*_activity*:
       hidden: true
-
-nest:
-  client_id: !secret NEST_CLIENT_ID
-  client_secret: !secret NEST_CLIENT_SECRET
+    sensor.woonkamer_thermostat_temperature:
+      friendly_name: Woonkamer - Temperatuur
+    sensor.woonkamer_thermostat_humidity:
+      friendly_name: Woonkamer - Luchtvochtigheid
 
 group:
   nest_devices:
@@ -50,3 +50,7 @@ group:
       - binary_sensor.woonkamer_thermostat_has_leaf
       - binary_sensor.woonkamer_thermostat_is_locked
       - binary_sensor.woonkamer_thermostat_is_using_emergency_heat
+
+nest:
+  client_id: !secret NEST_CLIENT_ID
+  client_secret: !secret NEST_CLIENT_SECRET

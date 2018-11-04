@@ -1,7 +1,28 @@
 homeassistant:
   customize_glob:
-    sensor.plant*:
-      hidden: true
+    plant.plant:
+      friendly_name: "Plant"
+    sensor.plant_moisture:
+      friendly_name: "Plant - Vochtigheid"
+    sensor.plant_battery:
+      friendly_name: "Plant - Batterij"
+    sensor.plant_temperature:
+      friendly_name: "Plant - Temperatuur"
+    sensor.plant_conductivity:
+      friendly_name: "Plant - Voeding"
+    sensor.plant_light_intensity:
+      friendly_name: "Plant - Licht"
+
+group:
+  mifora_plant:
+    name: Plant
+    entities:
+      - plant.plant
+      - sensor.plant_moisture
+      - sensor.plant_battery
+      - sensor.plant_temperature
+      - sensor.plant_conductivity
+      - sensor.plant_light_intensity
 
 sensor:
   platform: miflora

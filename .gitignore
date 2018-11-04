@@ -1,3 +1,4 @@
+deps/
 secrets.yaml
 *pycache*
 .*
@@ -5,4 +6,6 @@ secrets.yaml
 !.gitignore
 home-assistant*
 known_devices.yaml
+ip_bans.yaml
 www/
+*/node_modules/

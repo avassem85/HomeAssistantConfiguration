@@ -3,4 +3,11 @@ mqtt:
   username: !secret MQTT_USERNAME
   password: !secret MQTT_PASSWORD
   discovery: true
+  discovery_prefix: homeassistant
   client_id: home-assistant-alex
+  birth_message:
+    topic: 'hass/status'
+    payload: 'online'
+  will_message:
+    topic: 'hass/status'
+    payload: 'offline'

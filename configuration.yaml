@@ -10,6 +10,7 @@ homeassistant:
   auth_providers:
    - type: homeassistant
    - type: legacy_api_password
+   - type: trusted_networks
 
 group: !include groups.yaml
 automation: !include automations.yaml
@@ -17,11 +18,12 @@ script: !include scripts.yaml
 
 # Discover some devices automatically
 discovery:
-  # ignore:
+  ignore:
+    - xiaomi_gw
   #   - philips_hue
   #   - ikea_tradfri
   #   - sonos
-  #   - xiaomi_gw
+
 # Enables the auth component
 auth:
 
@@ -37,6 +39,7 @@ http:
   ssl_key: !secret SSL_KEY
   trusted_networks:
     - !secret HTTP_TRUSTED_IP_INTERNAL
+    - !secret HTTP_TRUSTED_IP_EXTERNAL
   login_attempts_threshold: 3
 
 # Enables the frontend
@@ -57,7 +60,7 @@ conversation:
 hassio:
 
 # Enables Home Assistant Cloud
-cloud:
+# cloud:
 
 # Enables configuration UI
 config:
