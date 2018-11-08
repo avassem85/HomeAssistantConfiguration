@@ -1,0 +1,56 @@
+remote:
+  - platform: harmony
+    name: Woonkamer
+    host: !secret HARMONY_HOST
+
+group:
+  harmony_woonkamer:
+    name: Harmony - Woonkamer
+    entities:
+      - remote.woonkamer
+      - sensor.harmony_woonkamer
+      - input_select.harmony_woonkamer
+
+sensor:
+  - platform: template
+    sensors:
+      harmony_woonkamer:
+        value_template: '{{ states.remote.woonkamer.attributes.current_activity }}'
+        friendly_name: 'Harmony - Activiteit'
+        
+input_select:
+  harmony_woonkamer:
+    name: TV Room
+    options:
+     - Selecteer activiteit
+     - Kodi Media Player
+     - Apple TV kijken
+     - Tv kijken
+     - Luisteren naar Sonos
+     - Joki en Jet
+     - Uit
+    initial: Selecteer activiteit
+
+automation:
+  - alias: 'TV Room Controls'
+    initial_state: true
+    hide_entity: true
+    trigger:
+      - platform: state
+        entity_id: input_select.harmony_woonkamer
+    action:
+      - service: remote.turn_on
+        data_template:  
+          entity_id: remote.woonkamer
+          activity: >-
+            {% if is_state("input_select.harmony_woonkamer", "Uit") %}-1
+            {% elif is_state("input_select.harmony_woonkamer", "Kodi Media Player") %}33803898
+            {% elif is_state("input_select.harmony_woonkamer", "Apple TV kijken") %}21771737
+            {% elif is_state("input_select.harmony_woonkamer", "Tv kijken") %}32097142
+            {% elif is_state("input_select.harmony_woonkamer", "Luisteren naar Sonos") %}21771601
+            {% elif is_state("input_select.harmony_woonkamer", "Joki en Jet") %}33803916
+            {% endif %}
+      - service: input_select.select_option
+        entity_id: input_select.harmony_woonkamer
+        data_template:
+          option: "Selecteer activiteit"
