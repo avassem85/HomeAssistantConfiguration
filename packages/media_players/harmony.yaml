@@ -1,6 +1,6 @@
 remote:
   - platform: harmony
-    name: Woonkamer
+    name: Woonkamer Harmony
     host: !secret HARMONY_HOST
 
 group:
@@ -15,12 +15,12 @@ sensor:
   - platform: template
     sensors:
       harmony_woonkamer:
-        value_template: '{{ states.remote.woonkamer.attributes.current_activity }}'
-        friendly_name: 'Harmony - Activiteit'
+        value_template: '{{ states.remote.woonkamer_harmony.attributes.current_activity }}'
+        friendly_name: 'Woonkamer - Harmony - Activiteit'
         
 input_select:
   harmony_woonkamer:
-    name: TV Room
+    name: Woonkamer - Harmony
     options:
      - Selecteer activiteit
      - Kodi Media Player
@@ -41,7 +41,7 @@ automation:
     action:
       - service: remote.turn_on
         data_template:  
-          entity_id: remote.woonkamer
+          entity_id: remote.woonkamer_harmony
           activity: >-
             {% if is_state("input_select.harmony_woonkamer", "Uit") %}-1
             {% elif is_state("input_select.harmony_woonkamer", "Kodi Media Player") %}33803898
@@ -54,3 +54,34 @@ automation:
         entity_id: input_select.harmony_woonkamer
         data_template:
           option: "Selecteer activiteit"
+  - alias: 'Start Joki en Jet'
+    initial_state: true
+    hide_entity: true
+    trigger:
+      - entity_id: sensor.harmony_woonkamer
+        platform: state
+        to: Joki en Jet
+    action:
+      - service: media_player.play_media
+        data_template:
+          entity_id: media_player.kodi_media_player
+          media_content_id: plugin://plugin.video.youtube/play/?playlist_id=PLOaricAENKs03OxaOVqhyebed_WQEwg6Z&play=1&order=shuffle
+          media_content_type: video
+      - service: light.turn_on
+        data:
+          entity_id: light.ambilight
+          effect: "HDMI"
+  - alias: 'Stop Joki en Jet'
+    initial_state: true
+    hide_entity: true
+    trigger:
+      - entity_id: sensor.harmony_woonkamer
+        platform: state
+        from: Joki en Jet
+    action:
+    - service: media_player.media_stop
+      data:
+        entity_id: media_player.kodi_media_player
+    - service: light.turn_off
+      data:
+        entity_id: light.ambilight

@@ -1,0 +1,13 @@
+media_player:
+  - platform: kodi
+    name: Kodi Media Player
+    host: !secret KODI_HOST
+    port: !secret KODI_PORT
+    username: !secret KODI_USERNAME
+    password: !secret KODI_PASSWORD
+    enable_websocket: false
+    turn_off_action:
+      service: media_player.kodi_call_method
+      data:
+        entity_id: media_player.kodi_media_player
+        method: System.Hibernate

@@ -1,6 +1,6 @@
 - id: '1535050343587'
   alias: Dummy
-  hide_entity: True
+  hide_entity: true
   trigger:
   - event: start
     platform: homeassistant
