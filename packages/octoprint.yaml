@@ -38,8 +38,6 @@ group:
       - sensor.snapmaker_job_percentage
       - sensor.snapmaker_time_elapsed
       - sensor.snapmaker_time_remaining
-      - sensor.temp_sensor_snapmaker_temperature
-      - sensor.temp_sensor_snapmaker_humidity
 
 camera:
   - platform: mjpeg
