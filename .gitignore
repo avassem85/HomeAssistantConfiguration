@@ -1,5 +1,6 @@
 deps/
 secrets.yaml
+OZW_Log.txt
 *pycache*
 .*
 !.travis.yml

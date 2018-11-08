@@ -4,14 +4,14 @@
 - [x] Add Travis-CI
 - [x] Setup Basic Configuration
 - [x] Setup HTTPS + DuckDNS
-- [ ] Using the new authentication system
+- [x] Using the new authentication system
 - [x] Setup the use packages
 - [x] Setup IOS
 - [x] Setup MQTT
 - [x] Setup Nest Devices
-- [ ] Setup Z-wave Devices
+- [x] Setup Z-wave Devices
 - [x] Setup Lovelace UI
-- [ ] Setup Hassio Node-Red
+- [x] Setup Hassio Node-Red
 
 ## Current Configuration
 * Raspberry Pi 3 Model B+ using [Hass.io](https://home-assistant.io/hassio/)
@@ -41,8 +41,6 @@
     - 1 x Aqara Water Leak Sensor
     - 2 x Mi Window and Door Sensor
     - 1 x Aqara Window and Door Sensor
-- RFXCOM
-    - RFXtrx433E USB 433.92MHz Transceiver
 - Z-wave
     - 1 x Zwave.me USB Controller
 - Nest
@@ -57,6 +55,4 @@
 - Moodo Smart Home Fragrance 
 
 ### Services
-- Darksky
 - Octoprint
-- 

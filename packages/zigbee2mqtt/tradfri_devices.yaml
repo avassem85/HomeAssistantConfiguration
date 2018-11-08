@@ -51,13 +51,6 @@ light:
     entities:
       - light.lamp_wc_beneden
 
-switch:
-  - platform: flux
-    lights:
-      - light.lamp_kantoor_1
-      - light.lamp_kantoor_2
-      - light.lamp_kantoor_3
-
 group:
   tradfri_berging:
     name: Trådfri Devices - Berging
