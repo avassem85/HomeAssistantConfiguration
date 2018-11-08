@@ -1,0 +1,438 @@
+homeassistant:
+  customize_glob:
+    zwave.dimmer_keuken:
+      friendly_name: Qubino ZMNHDA2 Flush Dimmer - Keuken
+    light.dimmer_keuken_level:
+      hidden: true
+      friendly_name: Keuken - Verlichting
+    switch.dimmer_keuken_switch:
+      friendly_name: Keuken - Verlichting
+    sensor.dimmer_keuken_energy:
+      friendly_name: Keuken - Verlichting - Verbruik (kWh)
+    sensor.dimmer_keuken_power:
+      friendly_name: Keuken - Verlichting - Verbruik (W)
+    sensor.dimmer_keuken_exporting:
+      hidden: true
+    sensor.dimmer_keuken_interval:
+      hidden: true
+    sensor.dimmer_keuken_previous_reading:
+      hidden: true
+    sensor.dimmer_keuken_temperature:
+      hidden: true
+    binary_sensor.dimmer_keuken_sensor:
+      hidden: true
+    binary_sensor.dimmer_keuken_sensor_2:
+      hidden: true
+    zwave.schakelaar_stolplamp:
+      friendly_name: Fibaro ZMNHDA2 Flush Dimmer - Stolplamp
+    switch.schakelaar_stolplamp_switch:
+      friendly_name: Keuken - Stolplamp
+    sensor.schakelaar_stolplamp_energy:
+      friendly_name: Keuken - Stolplamp - Verbruik (kWh)
+    sensor.schakelaar_stolplamp_power:
+      friendly_name: Keuken - Stolplamp - Verbruik (W)
+    sensor.schakelaar_stolplamp_exporting:
+      hidden: true
+    sensor.schakelaar_stolplamp_power_2:
+      hidden: true
+    zwave.sensor_voordeur:
+      friendly_name: Philio PST02-A 4 in 1 Multi-Sensor - Voordeur
+    sensor.sensor_voordeur_temperature:
+      friendly_name: Voordeur - Temperatuur
+    sensor.sensor_voordeur_luminance:
+      friendly_name: Voordeur - Licht
+    binary_sensor.sensor_voordeur_doorwindow_sensor:
+      hidden: true
+    binary_sensor.sensor_voordeur_motion_sensor:
+      hidden: true
+    binary_sensor.sensor_voordeur_tamper_sensor:
+      hidden: true
+    sensor.sensor_voordeur_access_control:
+      hidden: true
+    sensor.sensor_voordeur_alarm_level:
+      hidden: true
+    sensor.sensor_voordeur_alarm_type:
+      hidden: true
+    sensor.sensor_voordeur_burglar:
+      hidden: true
+    sensor.sensor_voordeur_sourcenodeid:
+      hidden: true
+    zwave.schakelaar_3dprinter:
+      friendly_name: Everspring AN158 Plug-in Meter Appliance Module - 3D Printer
+    switch.schakelaar_3dprinter_switch:
+      friendly_name: Snapmaker
+    sensor.schakelaar_3dprinter_energy:
+      friendly_name: Snapmaker - Verbruik (kWh)
+    sensor.schakelaar_3dprinter_power:
+      friendly_name: Snapmaker - Verbruik (W)
+    zwave.schakelaars_woonkamer:
+      friendly_name: FIBARO FGS221 Double Relay Switch 2x1.5kW - Woonkamer
+    switch.schakelaars_woonkamer_switch:
+      hidden: true
+    switch.schakelaars_woonkamer_switch_2:
+      friendly_name: Woonkamer - Verlichting
+    zwave.schakelaars_kantoor:
+      friendly_name: GreenWave PowerNode 6 port - Kantoor
+    switch.schakelaars_kantoor_switch:
+      friendly_name: Kantoor - Schermen
+    switch.schakelaars_kantoor_switch_2:
+      hidden: true
+    switch.schakelaars_kantoor_switch_3:
+      hidden: true
+    switch.schakelaars_kantoor_switch_4:
+      friendly_name: Kantoor - PC
+    switch.schakelaars_kantoor_switch_5:
+      hidden: true
+    switch.schakelaars_kantoor_switch_6:
+      friendly_name: Kantoor - Speakers
+    sensor.schakelaars_kantoor_power:
+      friendly_name: Kantoor - Schermen - Verbruik (W)
+    sensor.schakelaars_kantoor_power_2:
+      hidden: true
+    sensor.schakelaars_kantoor_power_3:
+      hidden: true
+    sensor.schakelaars_kantoor_power_4:
+      friendly_name: Kantoor - PC - Verbruik (W)
+    sensor.schakelaars_kantoor_power_5:
+      hidden: true
+    sensor.schakelaars_kantoor_power_6:
+      friendly_name: Kantoor - Speakers - Verbruik (W)
+    sensor.schakelaars_kantoor_energy:
+      friendly_name: Kantoor - Schermen - Verbruik (kWh)
+    sensor.schakelaars_kantoor_energy_2:
+      hidden: true
+    sensor.schakelaars_kantoor_energy_3:
+      hidden: true
+    sensor.schakelaars_kantoor_energy_4:
+      friendly_name: Kantoor - PC - Verbruik (kWh)
+    sensor.schakelaars_kantoor_energy_5:
+      hidden: true
+    sensor.schakelaars_kantoor_energy_6:
+      friendly_name: Kantoor - Speakers - Verbruik (kWh)
+    sensor.schakelaars_kantoor_previous_reading:
+      hidden: true
+    sensor.schakelaars_kantoor_previous_reading_2:
+      hidden: true
+    sensor.schakelaars_kantoor_previous_reading_3:
+      hidden: true
+    sensor.schakelaars_kantoor_previous_reading_4:
+      hidden: true
+    sensor.schakelaars_kantoor_previous_reading_5:
+      hidden: true
+    sensor.schakelaars_kantoor_previous_reading_6:
+      hidden: true
+    sensor.schakelaars_kantoor_previous_reading_7:
+      hidden: true
+    sensor.schakelaars_kantoor_previous_reading_8:
+      hidden: true
+    sensor.schakelaars_kantoor_previous_reading_9:
+      hidden: true
+    sensor.schakelaars_kantoor_previous_reading_10:
+      hidden: true
+    sensor.schakelaars_kantoor_previous_reading_11:
+      hidden: true
+    sensor.schakelaars_kantoor_previous_reading_12:
+      hidden: true
+    zwave.schakelaars_tvmeubel:
+      friendly_name: GreenWave PowerNode 6 port - TV Meubel
+    switch.schakelaars_tvmeubel_switch:
+      friendly_name: Woonkamer - Steamlink
+    switch.schakelaars_tvmeubel_switch_2:
+      friendly_name: Woonkamer - Apple TV
+    switch.schakelaars_tvmeubel_switch_3:
+      friendly_name: Woonkamer - Xs4all
+    switch.schakelaars_tvmeubel_switch_4:
+      friendly_name: Woonkamer - Sonos
+    switch.schakelaars_tvmeubel_switch_5:
+      friendly_name: Woonkamer - TV
+    switch.schakelaars_tvmeubel_switch_6:
+      friendly_name: Woonkamer - Logitech Harmony
+    sensor.schakelaars_tvmeubel_power:
+      friendly_name: Woonkamer - Steamlink - Verbruik (W)
+    sensor.schakelaars_tvmeubel_power_2:
+      friendly_name: Woonkamer - Apple TV - Verbruik (W)
+    sensor.schakelaars_tvmeubel_power_3:
+      friendly_name: Woonkamer - Xs4all - Verbruik (W)
+    sensor.schakelaars_tvmeubel_power_4:
+      friendly_name: Woonkamer - Sonos - Verbruik (W)
+    sensor.schakelaars_tvmeubel_power_5:
+      friendly_name: Woonkamer - TV - Verbruik (W)
+    sensor.schakelaars_tvmeubel_power_6:
+      friendly_name: Woonkamer - Logitech Harmony - Verbruik (W)
+    sensor.schakelaars_tvmeubel_energy:
+      friendly_name: Woonkamer - Steamlink - Verbruik (kWh)
+    sensor.schakelaars_tvmeubel_energy_2:
+      friendly_name: Woonkamer - Apple TV - Verbruik (kWh)
+    sensor.schakelaars_tvmeubel_energy_3:
+      friendly_name: Woonkamer - Xs4all - Verbruik (kWh)
+    sensor.schakelaars_tvmeubel_energy_4:
+      friendly_name: Woonkamer - Sonos - Verbruik (kWh)
+    sensor.schakelaars_tvmeubel_energy_5:
+      friendly_name: Woonkamer - TV - Verbruik (kWh)
+    sensor.schakelaars_tvmeubel_energy_6:
+      friendly_name: Woonkamer - Logitech Harmony - Verbruik (kWh)
+    sensor.schakelaars_tvmeubel_previous_reading:
+      hidden: true
+    sensor.schakelaars_tvmeubel_previous_reading_2:
+      hidden: true
+    sensor.schakelaars_tvmeubel_previous_reading_3:
+      hidden: true
+    sensor.schakelaars_tvmeubel_previous_reading_4:
+      hidden: true
+    sensor.schakelaars_tvmeubel_previous_reading_5:
+      hidden: true
+    sensor.schakelaars_tvmeubel_previous_reading_6:
+      hidden: true
+    sensor.schakelaars_tvmeubel_previous_reading_7:
+      hidden: true
+    sensor.schakelaars_tvmeubel_previous_reading_8:
+      hidden: true
+    sensor.schakelaars_tvmeubel_previous_reading_9:
+      hidden: true
+    sensor.schakelaars_tvmeubel_previous_reading_10:
+      hidden: true
+    sensor.schakelaars_tvmeubel_previous_reading_11:
+      hidden: true
+    sensor.schakelaars_tvmeubel_previous_reading_12:
+      hidden: true
+    zwave.unknown_node_15:
+      friendly_name: Fibaro Motion Sensor - Gang beneden
+    binary_sensor.unknown_node_15_sensor:
+      hidden: true
+
+group:
+  zwave_devices:
+    name: Z-Wave
+    entities:
+      - zwave.zwaveme_zme_uzb1_usb_stick
+      - zwave.dimmer_keuken
+      - zwave.schakelaar_stolplamp
+      - zwave.sensor_voordeur
+      - zwave.schakelaar_3dprinter
+      - zwave.schakelaars_woonkamer
+      - zwave.schakelaars_kantoor
+      - zwave.schakelaars_tvmeubel
+      - zwave.unknown_node_15
+  dimmer_keuken:
+    name: Qubino ZMNHDA2 Flush Dimmer - Keuken
+    entities:
+      - zwave.dimmer_keuken
+      - light.dimmer_keuken_level
+      - switch.dimmer_keuken_switch
+      - sensor.dimmer_keuken_energy
+      - sensor.dimmer_keuken_power
+      - sensor.dimmer_keuken_exporting
+      - sensor.dimmer_keuken_interval
+      - sensor.dimmer_keuken_previous_reading
+      - sensor.dimmer_keuken_temperature
+      - binary_sensor.dimmer_keuken_sensor
+      - binary_sensor.dimmer_keuken_sensor_2
+  schakelaar_stolplamp:
+    name: FIBARO FGWPE/F Wall Plug - Stolplamp
+    entities:
+      - zwave.schakelaar_stolplamp
+      - switch.schakelaar_stolplamp_switch
+      - sensor.schakelaar_stolplamp_energy
+      - sensor.schakelaar_stolplamp_power
+      - sensor.schakelaar_stolplamp_exporting
+      - sensor.schakelaar_stolplamp_power_2
+  sensor_voordeur:
+    name: Philio PST02-A 4 in 1 Multi-Sensor - Voordeur
+    entities:
+      - zwave.sensor_voordeur
+      - sensor.sensor_voordeur_temperature
+      - sensor.sensor_voordeur_luminance
+      - binary_sensor.sensor_voordeur_doorwindow_sensor
+      - binary_sensor.sensor_voordeur_motion_sensor
+      - binary_sensor.sensor_voordeur_tamper_sensor
+      - sensor.sensor_voordeur_access_control
+      - sensor.sensor_voordeur_alarm_level
+      - sensor.sensor_voordeur_alarm_type
+      - sensor.sensor_voordeur_burglar
+      - sensor.sensor_voordeur_sourcenodeid
+      - binary_sensor.door_sensor_voordeur
+      - binary_sensor.motion_sensor_voordeur
+      - binary_sensor.tamper_sensor_voordeur
+  schakelaar_3dprinter:
+    name: Eversprint AN158 Plug-in Meter Appliance Module - 3D Printer
+    entities:
+      - zwave.schakelaar_3dprinter
+      - switch.schakelaar_3dprinter_switch
+      - sensor.schakelaar_3dprinter_energy
+      - sensor.schakelaar_3dprinter_power
+  schakelaars_woonkamer:
+    name: FIBARO FGS221 Double Relay Switch 2x1.5kW - Woonkamer
+    entities:
+      - zwave.schakelaars_woonkamer
+      - switch.schakelaars_woonkamer_switch
+      - switch.schakelaars_woonkamer_switch_2
+  schakelaars_kantoor:
+    name: GreenWave PowerNode 6 port - Kantoor
+    entities:
+      - zwave.schakelaars_kantoor
+      - switch.schakelaars_kantoor_switch
+      - switch.schakelaars_kantoor_switch_2
+      - switch.schakelaars_kantoor_switch_3
+      - switch.schakelaars_kantoor_switch_4
+      - switch.schakelaars_kantoor_switch_5
+      - switch.schakelaars_kantoor_switch_6
+      - sensor.schakelaars_kantoor_power
+      - sensor.schakelaars_kantoor_power_2
+      - sensor.schakelaars_kantoor_power_3
+      - sensor.schakelaars_kantoor_power_4
+      - sensor.schakelaars_kantoor_power_5
+      - sensor.schakelaars_kantoor_power_6
+      - sensor.schakelaars_kantoor_energy
+      - sensor.schakelaars_kantoor_energy_2
+      - sensor.schakelaars_kantoor_energy_3
+      - sensor.schakelaars_kantoor_energy_4
+      - sensor.schakelaars_kantoor_energy_5
+      - sensor.schakelaars_kantoor_energy_6
+      - sensor.schakelaars_kantoor_previous_reading
+      - sensor.schakelaars_kantoor_previous_reading_2
+      - sensor.schakelaars_kantoor_previous_reading_3
+      - sensor.schakelaars_kantoor_previous_reading_4
+      - sensor.schakelaars_kantoor_previous_reading_5
+      - sensor.schakelaars_kantoor_previous_reading_6
+      - sensor.schakelaars_kantoor_previous_reading_7
+      - sensor.schakelaars_kantoor_previous_reading_8
+      - sensor.schakelaars_kantoor_previous_reading_9
+      - sensor.schakelaars_kantoor_previous_reading_10
+      - sensor.schakelaars_kantoor_previous_reading_11
+      - sensor.schakelaars_kantoor_previous_reading_12
+  schakelaars_tvmeubel:
+    name: GreenWave PowerNode 6 port - TV Meubel
+    entities:
+      - zwave.schakelaars_tvmeubel
+      - switch.schakelaars_tvmeubel_switch
+      - switch.schakelaars_tvmeubel_switch_2
+      - switch.schakelaars_tvmeubel_switch_3
+      - switch.schakelaars_tvmeubel_switch_4
+      - switch.schakelaars_tvmeubel_switch_5
+      - switch.schakelaars_tvmeubel_switch_6
+      - sensor.schakelaars_tvmeubel_power
+      - sensor.schakelaars_tvmeubel_power_2
+      - sensor.schakelaars_tvmeubel_power_3
+      - sensor.schakelaars_tvmeubel_power_4
+      - sensor.schakelaars_tvmeubel_power_5
+      - sensor.schakelaars_tvmeubel_power_6
+      - sensor.schakelaars_tvmeubel_energy
+      - sensor.schakelaars_tvmeubel_energy_2
+      - sensor.schakelaars_tvmeubel_energy_3
+      - sensor.schakelaars_tvmeubel_energy_4
+      - sensor.schakelaars_tvmeubel_energy_5
+      - sensor.schakelaars_tvmeubel_energy_6
+      - sensor.schakelaars_tvmeubel_previous_reading
+      - sensor.schakelaars_tvmeubel_previous_reading_2
+      - sensor.schakelaars_tvmeubel_previous_reading_3
+      - sensor.schakelaars_tvmeubel_previous_reading_4
+      - sensor.schakelaars_tvmeubel_previous_reading_5
+      - sensor.schakelaars_tvmeubel_previous_reading_6
+      - sensor.schakelaars_tvmeubel_previous_reading_7
+      - sensor.schakelaars_tvmeubel_previous_reading_8
+      - sensor.schakelaars_tvmeubel_previous_reading_9
+      - sensor.schakelaars_tvmeubel_previous_reading_10
+      - sensor.schakelaars_tvmeubel_previous_reading_11
+      - sensor.schakelaars_tvmeubel_previous_reading_12
+  sensor_gang_beneden:
+    name: Fibaro Motion Sensor - Gang beneden
+    entities:
+      - zwave.unknown_node_15
+      - binary_sensor.unknown_node_15_sensor
+    
+binary_sensor:
+  - platform: template
+    sensors:
+      door_sensor_voordeur:
+        friendly_name: 'Voordeur - Deur'
+        value_template: '{{ is_state("sensor.sensor_voordeur_access_control", "22") }}'
+        device_class: opening
+        entity_id: sensor.sensor_voordeur_access_control
+
+      motion_sensor_voordeur:
+        friendly_name: 'Voordeur - Beweging'
+        value_template: '{{ is_state("sensor.sensor_voordeur_burglar", "8") }}'
+        device_class: motion
+        entity_id: sensor.sensor_voordeur_burglar
+
+      tamper_sensor_voordeur:
+        friendly_name: 'Voordeur - Knoeien'
+        value_template: '{{ is_state("sensor.sensor_voordeur_burglar", "3") }}'
+        device_class: safety
+        entity_id: sensor.sensor_voordeur_burglar
+
+# Philio PST02-A 4 in 1 Multi-Sensor - Config
+# config 2: 255
+# config 3: 12
+# config 4: 99
+# config 5: 0
+# config 6: 4
+# config 7: 2
+# config 8: 3
+# config 9: 4
+# config 10: 12
+# config 11: 12
+# config 12: 12
+# config 13: 12
+# config 20: 30
+# config 21: 1
+# config 22: 10
+
+zwave:
+  usb_path: /dev/ttyACM1
+  polling_interval: 60000
+  device_config:
+    sensor.schakelaars_kantoor_energy:
+      polling_intensity: 60
+    sensor.schakelaars_kantoor_energy_2:
+      polling_intensity: 60
+    sensor.schakelaars_kantoor_energy_3:
+      polling_intensity: 60
+    sensor.schakelaars_kantoor_energy_4:
+      polling_intensity: 60
+    sensor.schakelaars_kantoor_energy_5:
+      polling_intensity: 60
+    sensor.schakelaars_kantoor_energy_6:
+      polling_intensity: 60
+    sensor.schakelaars_kantoor_power:
+      polling_intensity: 10
+    sensor.schakelaars_kantoor_power_2:
+      polling_intensity: 10
+    sensor.schakelaars_kantoor_power_3:
+      polling_intensity: 10
+    sensor.schakelaars_kantoor_power_4:
+      polling_intensity: 10
+    sensor.schakelaars_kantoor_power_5:
+      polling_intensity: 10
+    sensor.schakelaars_kantoor_power_6:
+      polling_intensity: 10
+    sensor.schakelaars_tvmeubel_energy:
+      polling_intensity: 60
+    sensor.schakelaars_tvmeubel_energy_2:
+      polling_intensity: 60
+    sensor.schakelaars_tvmeubel_energy_3:
+      polling_intensity: 60
+    sensor.schakelaars_tvmeubel_energy_4:
+      polling_intensity: 60
+    sensor.schakelaars_tvmeubel_energy_5:
+      polling_intensity: 60
+    sensor.schakelaars_tvmeubel_energy_6:
+      polling_intensity: 60
+    sensor.schakelaars_tvmeubel_power:
+      polling_intensity: 10
+    sensor.schakelaars_tvmeubel_power_2:
+      polling_intensity: 10
+    sensor.schakelaars_tvmeubel_power_3:
+      polling_intensity: 10
+    sensor.schakelaars_tvmeubel_power_4:
+      polling_intensity: 10
+    sensor.schakelaars_tvmeubel_power_5:
+      polling_intensity: 10
+    sensor.schakelaars_tvmeubel_power_6:
+      polling_intensity: 10
+
+# developer tools service: zwave.rename_node
+# {
+# "node_id": "13",
+# "name": "schakelaars_tvmeubel"
+# }
