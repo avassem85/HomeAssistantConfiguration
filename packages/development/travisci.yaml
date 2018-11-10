@@ -1,0 +1,30 @@
+homeassistant:
+  customize_glob:
+    sensor.avassem85homeassistantconfiguration_last_build_duration:
+      friendly_name: Travis - Home Assistant - Build duur
+    sensor.avassem85homeassistantconfiguration_last_build_id:
+      friendly_name: Travis - Home Assistant - Build id
+    sensor.avassem85homeassistantconfiguration_last_build_started_at:
+      friendly_name: Travis - Home Assistant - Build gestart
+    sensor.avassem85homeassistantconfiguration_last_build_finished_at:
+      friendly_name: Travis - Home Assistant - Build klaar
+    sensor.avassem85homeassistantconfiguration_last_build_state:
+      friendly_name: Travis - Home Assistant - Build status
+    sensor.avassem85homeassistantconfiguration_state:
+      friendly_name: Travis - Home Assistant - Status
+
+group:
+  travisci:
+    name: Travis - Home Assistant
+    entities:
+      - sensor.avassem85homeassistantconfiguration_last_build_duration
+      - sensor.avassem85homeassistantconfiguration_last_build_id
+      - sensor.avassem85homeassistantconfiguration_last_build_started_at
+      - sensor.avassem85homeassistantconfiguration_last_build_finished_at
+      - sensor.avassem85homeassistantconfiguration_last_build_state
+      - sensor.avassem85homeassistantconfiguration_state
+
+sensor:
+  - platform: travisci
+    api_key: !secret TRAVIS_API_TOKEN
+    repository: avassem85/HomeAssistantConfiguration
