@@ -1,0 +1,18 @@
+homeassistant:
+  customize_glob:
+    device_tracker.ios_iphone_alex:
+      friendly_name: iPhone Alex
+    sensor.iphone_alex_battery_level:
+      friendly_name: iPhone Alex - Batterij
+    sensor.iphone_alex_battery_state:
+      friendly_name: iPhone Alex - Status
+
+group:
+  ios_alex:
+    name: IOS - Alex
+    entities:
+      - device_tracker.ios_iphone_alex
+      - sensor.iphone_alex_battery_level
+      - sensor.iphone_alex_battery_state
+
+ios:
