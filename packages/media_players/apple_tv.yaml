@@ -1,3 +1,17 @@
+homeassistant:
+  customize_glob:
+    media_player.apple_tv:
+      friendly_name: Woonkamer - Apple TV
+    remote.apple_tv:
+      friendly_name: Woonkamer - Apple TV
+
+group:
+  apple_tv:
+    name: Woonkamer - Apple TV
+    entities:
+      - media_player.apple_tv
+      - remote.apple_tv
+
 apple_tv:
   - host: !secret APPLETV_HOST
     login_id: !secret APPLETV_LOGIN_ID
