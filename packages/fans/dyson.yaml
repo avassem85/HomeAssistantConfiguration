@@ -1,0 +1,33 @@
+homeassistant:
+  customize_glob:
+    fan.dyson_fan:
+      friendly_name: Slaapkamer - Dyson - Fan
+    sensor.dyson_fan_temperature:
+      friendly_name: Slaapkamer - Dyson - Fan
+    sensor.dyson_fan_humidity:
+      friendly_name: Slaapkamer - Dyson - Fan
+    sensor.dyson_fan_aqi:
+      friendly_name: Slaapkamer - Dyson - Fan
+    sensor.dyson_fan_dust:
+      friendly_name: Slaapkamer - Dyson - Fan
+    sensor.dyson_fan_filter_life:
+      friendly_name: Slaapkamer - Dyson - Fan
+
+group:
+  dyson_fan:
+    name: Dyson - Fan
+    entities:
+      - fan.dyson_fan
+      - sensor.dyson_fan_temperature
+      - sensor.dyson_fan_humidity
+      - sensor.dyson_fan_aqi
+      - sensor.dyson_fan_dust
+      - sensor.dyson_fan_filter_life
+
+dyson:
+  username: !secret DYSON_USERNAME
+  password: !secret DYSON_PASSWORD
+  language: !secret DYSON_ACCOUNT_LANGUAGE
+  devices:
+    - device_id: !secret DYSON_DEVICE_ID
+      device_ip: !secret DYSON_IP
