@@ -12,7 +12,7 @@ homeassistant:
    - type: legacy_api_password
    - type: trusted_networks
   whitelist_external_dirs:
-    - '/config'
+    - !secret HA_CONFIGURATION_DIRECTORY
   
 
 group: !include groups.yaml
