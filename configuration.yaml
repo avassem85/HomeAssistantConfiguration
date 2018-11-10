@@ -13,7 +13,6 @@ homeassistant:
    - type: trusted_networks
   whitelist_external_dirs:
     - !secret HA_CONFIGURATION_DIRECTORY
-  
 
 group: !include groups.yaml
 automation: !include automations.yaml
@@ -37,7 +36,6 @@ auth:
 # Configure Home Assistant to use HTTPS
 http:
   base_url: !secret HTTP_URL
-  api_password: !secret HTTP_PASSWORD
   ssl_certificate: !secret SSL_CERTIFICATE
   ssl_key: !secret SSL_KEY
   trusted_networks:
