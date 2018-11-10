@@ -1,0 +1,30 @@
+homeassistant:
+  customize_glob:
+    sensor.speedtest_download:
+      friendly_name: Internet - Download
+    sensor.speedtest_upload:
+      friendly_name: Internet - Upload
+    sensor.speedtest_ping:
+      friendly_name: Internet - Ping
+
+group:
+  speedtest:
+    name: Internet - Speedtest
+    entities:
+      - sensor.speedtest_download
+      - sensor.speedtest_upload
+      - sensor.speedtest_ping
+
+sensor:
+  - platform: speedtest
+    server_id: 13218
+    minute: 30
+    hour:
+      - 0
+      - 6
+      - 12
+      - 18
+    monitored_conditions:
+      - ping
+      - download
+      - upload
