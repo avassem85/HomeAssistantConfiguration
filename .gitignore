@@ -3,6 +3,7 @@ secrets.yaml
 OZW_Log.txt
 zwcfg_*
 *pycache*
+icloud/*
 .*
 !.travis.yml
 !.gitignore

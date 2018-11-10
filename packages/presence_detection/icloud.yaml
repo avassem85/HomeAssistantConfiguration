@@ -1,0 +1,19 @@
+homeassistant:
+  customize_glob:
+    device_tracker.ipadvanelise:
+      friendly_name: iPad Elise
+    device_tracker.iphonealex:
+      friendly_name: iPhone Alex
+
+group:
+  icloud:
+    name: iCloud Tracker
+    entities:
+      - device_tracker.ipadvanelise
+      - device_tracker.iphonealex
+
+device_tracker:
+  - platform: icloud
+    username: !secret ICLOUD_USERNAME
+    password: !secret ICLOUD_PASSWORD
+    account_name: accountname
