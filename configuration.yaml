@@ -11,6 +11,9 @@ homeassistant:
    - type: homeassistant
    - type: legacy_api_password
    - type: trusted_networks
+  whitelist_external_dirs:
+    - '/config'
+  
 
 group: !include groups.yaml
 automation: !include automations.yaml
