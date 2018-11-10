@@ -7,7 +7,7 @@ group:
   harmony_woonkamer:
     name: Harmony - Woonkamer
     entities:
-      - remote.woonkamer
+      - remote.woonkamer_harmony
       - sensor.harmony_woonkamer
       - input_select.harmony_woonkamer
 
