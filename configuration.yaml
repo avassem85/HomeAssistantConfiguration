@@ -20,12 +20,12 @@ automation: !include automations.yaml
 script: !include scripts.yaml
 
 # Discover some devices automatically
-discovery:
-  ignore:
-    - xiaomi_gw
-  #   - philips_hue
-  #   - ikea_tradfri
-  #   - sonos
+# discovery:
+#   ignore:
+#     - xiaomi_gw
+#     - ikea_tradfri
+#   #   - philips_hue
+#   #   - sonos
 
 # Enables the auth component
 auth:
