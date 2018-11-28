@@ -1,0 +1,3 @@
+moodo:
+  username: !secret MOODO_USERNAME
+  password: !secret MOODO_PASSWORD
